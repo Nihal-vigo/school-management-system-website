@@ -1,0 +1,16 @@
+User-agent: *
+
+Disallow: /terms-conditions/
+Disallow: /privacy-policy/
+Disallow: /feed/
+Disallow: /tag/
+Disallow: /wp-admin/
+Disallow: /category/
+Disallow: /data/
+Allow: /wp-content/themes/
+Allow: /wp-content/plugins/
+
+
+Sitemap: https://www.vigorousit.com/sitemap.xml
+
+Sitemap: https://www.vigorousit.com/blog/post-sitemap.xml
