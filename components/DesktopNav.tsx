@@ -203,7 +203,7 @@ export default function DesktopNav(props: any) {
 
   return (
     <div className="w-full headered fixed ">
-      <nav className=" flex items-center justify-between  mx-auto  2xl:w-4/5 md:w-11/12 h-20 ">
+      <nav className=" flex items-center justify-between  mx-auto  2xl:w-4/5 md:w-11/12 h-16 ">
         <Link passHref={true} href="/" className="relative flex items-center flex-shrink-0 text-white">
           <Image src="/logo/vigo-camp-logo.webp"
             alt="Vigorous IT Solutions logo"

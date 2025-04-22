@@ -14,7 +14,7 @@ const Plans = ({ title, desc, Plans }) => {
                         const { title, decs, items, btnName } = elem;
                         return (
                             <div key={index} className="flex-shrink-0 w-[300px] sm:w-auto">
-                                <div className="flex justify-center items-start leading-9 tracking-wide bg-gray-200 lg:h-[720px] md:h-[780px]  h-[850px] rounded-2xl">
+                                <div className="flex justify-center items-start leading-9 tracking-wide bg-[#f3f4f6] lg:h-[720px] md:h-[780px]  h-[850px] rounded-2xl">
                                     <div className='w-full'>
                                         <div className=''>
                                             <div className='space-y-1 p-6 bg-primary rounded-t-2xl xl:h-24 sm:h-28 h-32'>
@@ -30,9 +30,9 @@ const Plans = ({ title, desc, Plans }) => {
                                                                 {Array.isArray(item.content) &&
                                                                     item.content.map((point, idx) => (
                                                                         <li key={idx} className='font-normal flex items-center last-of-type:border-none'>
-                                                                            <span className="flex items-start">
-                                                                                <BsDot className='flex flex-shrink-0' size={25} />
-                                                                                {point}
+                                                                            <span className="flex items-center gap-2">
+                                                                                {point.icon}
+                                                                                {point.name}
                                                                             </span>
                                                                         </li>
                                                                     ))}
@@ -42,8 +42,8 @@ const Plans = ({ title, desc, Plans }) => {
                                                 </div>
                                             )}
                                         </div>
-                                        <div className='mx-auto w-11/12 lg:mb-0 mb-5'>
-                                            <button className='bg-primary p-2 text-white font-bold rounded-full w-full'>{btnName}</button>
+                                        <div className='mx-auto w-3/4 lg:mb-0 mb-5'>
+                                            <button className='bg-primary hover:bg-primary/90 p-2 text-white font-bold rounded-2xl w-full'>{btnName}</button>
                                         </div>
                                     </div>
                                 </div>

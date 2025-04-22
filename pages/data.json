@@ -550,68 +550,7 @@
       ]
     }
   ],
-  "plans": [
-    {
-      "title": "Basic Plan",
-      "decs": "Perfect for Small Institutions or Startups (Upto 300 Students)",
-      "items": [
-        {
-          "subtitle": "Included:",
-          "content": [
-            "Student, Teacher & Staff Records Management",
-            "Attendance Tracking (Manual Entry)",
-            "Timetable & Scheduling Tool",
-            "Email & SMS Notification System",
-            "Document Management (Limited)",
-            "Basic Reporting & Analytics",
-            "Web Admin Portal"
-          ]
-        },
-        {
-          "subtitle": "Not Included:",
-          "content": [
-            "Mobile App Access",
-            "Online Fee Collection",
-            "Exam & Grading Modules",
-            "Biometric Integration",
-            "Transport, Library & Hostel Modules"
-          ]
-        }
-      ],
-      "btnName": "Starting Price: ₹5,000/year"
-    },
-    {
-      "title": "Advanced Plan",
-      "decs": "Recommended for Medium to Large Schools (Upto 300 Students)",
-      "items": [
-        {
-          "subtitle": "Included:",
-          "content": [
-            "All Essential Plan Features",
-            "Fee Management System with Online Payment Gateway Integration",
-            "Exam Management & Auto Grading",
-            "Parent-Teacher Communication Portal",
-            "Mobile App (Android) – Branded Access",
-            "Library Management System",
-            "Inventory & Asset Tracking",
-            "Notification Scheduler",
-            "Certificate Generation (TC, Bonafide, etc.)"
-          ]
-        },
-        {
-          "subtitle": "Not Included:",
-          "content": [
-            "Transport with GPS",
-            "Biometric & RFID Integration",
-            "Multi-Branch / Campus Management",
-            "Hostel & Meal Plans",
-            "API Integrations / Custom Features"
-          ]
-        }
-      ],
-      "btnName": "Starting Price: ₹7,500/year"
-    }
-  ],
+  
   "offer": [
     {
       "title": "School ERP Software",

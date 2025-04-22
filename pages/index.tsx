@@ -20,8 +20,8 @@ import { MdOutlineEmojiTransportation } from "react-icons/md";
 import { BiSolidReport } from "react-icons/bi";
 import { BsCashCoin } from "react-icons/bs";
 import { IoPeopleCircleOutline } from "react-icons/io5";
-
-
+import { FcOk } from "react-icons/fc";
+import { ImCross } from "react-icons/im";
 const Header = dynamic(() => import('../components/Header'), {
   loading: () => <p>Loading...</p>,
 })
@@ -31,31 +31,174 @@ const HeroSection = dynamic(() => import('../components/HeroSection'), {
   loading: () => <p>Loading...</p>,
 })
 
-const { offer, TeachersPanel, ParentsPanel, AdminPanel, tabFeatures, benefits, plans, faqDataOne, faqDataTwo } = PageData;
+
+const plans = [
+  {
+    "title": "Basic Plan",
+    "decs": "Perfect for Small Institutions or Startups (Upto 300 Students)",
+    "items": [
+      {
+        "subtitle": "Included:",
+        "content": [
+
+          {
+            icon: <FcOk />,
+            name: "Student, Teacher & Staff Records Management"
+          },
+          {
+            icon: <FcOk />,
+            name: "Attendance Tracking (Manual Entry)"
+          },
+          {
+            icon: <FcOk />,
+            name: "Timetable & Scheduling Tool"
+          },
+          {
+            icon: <FcOk />,
+            name: "Email & SMS Notification System"
+          },
+          {
+            icon: <FcOk />,
+            name: "Document Management (Limited)"
+          },
+          {
+            icon: <FcOk />,
+            name: "Basic Reporting & Analytics"
+          },
+          {
+            icon: <FcOk />,
+            name: "Web Admin Portal"
+          }
+        ]
+      },
+      {
+        "subtitle": "Not Included:",
+        "content": [
+          {
+            icon: <ImCross size={12}  />,
+            name: "Mobile App Access"
+          },
+          {
+            icon: <ImCross size={12} />,
+            name: "Online Fee Collection"
+          },
+          {
+            icon: <ImCross size={12} />,
+            name: "Exam & Grading Modules"
+          },
+          {
+            icon: <ImCross size={12} />,
+            name: "Biometric Integration"
+          },
+          {
+            icon: <ImCross size={12} />,
+            name: "Transport, Library & Hostel Modules"
+          }
+        ]
+      }
+    ],
+    "btnName": "Starting Price: ₹5,000/year"
+  },
+  {
+    "title": "Advanced Plan",
+    "decs": "Recommended for Medium to Large Schools (Upto 300 Students)",
+    "items": [
+      {
+        "subtitle": "Included:",
+        "content": [
+          {
+            icon: <FcOk />,
+            name: "All Essential Plan Features",
+          },
+          {
+            icon: <FcOk />,
+            name: "Fee Management System with Online Payment Gateway Integration",
+          },
+          {
+            icon: <FcOk />,
+            name: "Exam Management & Auto Grading",
+          },
+          {
+            icon: <FcOk />,
+            name: "Parent-Teacher Communication Portal",
+          },
+          {
+            icon: <FcOk />,
+            name: "Mobile App (Android) – Branded Access",
+          },
+          {
+            icon: <FcOk />,
+            name: "Library Management System",
+          },
+          {
+            icon: <FcOk />,
+            name: "Inventory & Asset Tracking",
+          },
+          {
+            icon: <FcOk />,
+            name: "Notification Scheduler",
+          },
+          {
+            icon: <FcOk />,
+            name: "Certificate Generation (TC, Bonafide, etc.)"
+          }
+        ]
+      },
+      {
+        "subtitle": "Not Included:",
+        "content": [
+          {
+            icon: <ImCross size={12} />,
+            name: "Transport with GPS",
+          },
+          {
+            icon: <ImCross size={12} />,
+            name: "Biometric & RFID Integration",
+          },
+          {
+            icon: <ImCross size={12} />,
+            name: "Multi-Branch / Campus Management",
+          },
+          {
+            icon: <ImCross size={12} />,
+            name: "Hostel & Meal Plans",
+          },
+          {
+            icon: <ImCross size={12} />,
+            name: "API Integrations / Custom Features"
+          }
+        ]
+      }
+    ],
+    "btnName": "Starting Price: ₹7,500/year"
+  }
+]
+
+const { offer, TeachersPanel, ParentsPanel, AdminPanel, tabFeatures, benefits, faqDataOne, faqDataTwo } = PageData;
 
 const tabs = [
   {
-    "icon": <HiAcademicCap size={30}  className=""/>,
+    "icon": <HiAcademicCap size={30} className="" />,
     "title": "Academics Management"
   },
   {
-    "icon": <PiStudentFill size={30}  className=""/>,
+    "icon": <PiStudentFill size={30} className="" />,
     "title": "Student Management"
   },
   {
-    "icon": <MdOutlineEmojiTransportation size={30}  className=""/>,
+    "icon": <MdOutlineEmojiTransportation size={30} className="" />,
     "title": "Transportation/Library /Hostel"
   },
   {
-    "icon": <BiSolidReport size={30}  className=""/>,
+    "icon": <BiSolidReport size={30} className="" />,
     "title": "Exam Management"
   },
   {
-    "icon": <BsCashCoin size={30}  className=""/>,
+    "icon": <BsCashCoin size={30} className="" />,
     "title": "Payroll & Finance Management"
   },
   {
-    "icon": <IoPeopleCircleOutline size={30}  className=""/>,
+    "icon": <IoPeopleCircleOutline size={30} className="" />,
     "title": "Employee/HRM Management"
   }
 ]
