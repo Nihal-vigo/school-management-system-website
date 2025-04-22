@@ -881,5 +881,12 @@
       "title": "Does Vigo offer a vehicle tracking service?",
       "desc": "Yes, offering students customized and comfortable routes is also one of our main concerns."
     }
+  ],
+   "roles" : [
+    { "label": "Teacher", "image": "/images/admin-icon.svg" },
+    { "label": "Admin", "image": "/images/admin-icon.svg" },
+    { "label": "Principal", "image": "/images/admin-icon.svg" },
+    { "label": "Owner", "image": "/images/admin-icon.svg" },
+    { "label": "Chairman", "image": "/images/admin-icon.svg" }
   ]
 }

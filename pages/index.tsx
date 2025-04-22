@@ -4,7 +4,7 @@ import Head from "next/head";
 import dynamic from 'next/dynamic'
 import PageData from "./data.json"
 import PartnersLogoMobileView from "../components/PartnersLogoMobileView";
-import OtherExpertise from "../components/OtherExpertise";
+import OtherExpertise from "./roles";
 import Link from "next/link";
 import About from "../components/About";
 import Panels from "../components/Panels";
@@ -22,6 +22,7 @@ import { BsCashCoin } from "react-icons/bs";
 import { IoPeopleCircleOutline } from "react-icons/io5";
 import { FcOk } from "react-icons/fc";
 import { ImCross } from "react-icons/im";
+import { useRouter } from "next/router";
 const Header = dynamic(() => import('../components/Header'), {
   loading: () => <p>Loading...</p>,
 })
@@ -75,7 +76,7 @@ const plans = [
         "subtitle": "Not Included:",
         "content": [
           {
-            icon: <ImCross size={12}  />,
+            icon: <ImCross size={12} />,
             name: "Mobile App Access"
           },
           {
@@ -174,7 +175,7 @@ const plans = [
   }
 ]
 
-const { offer, TeachersPanel, ParentsPanel, AdminPanel, tabFeatures, benefits, faqDataOne, faqDataTwo } = PageData;
+const { offer, TeachersPanel, ParentsPanel, AdminPanel, tabFeatures, benefits, faqDataOne, faqDataTwo, roles } = PageData;
 
 const tabs = [
   {
@@ -204,6 +205,7 @@ const tabs = [
 ]
 
 const homepage = () => {
+  const [selectedRole, setSelectedRole] = useState(null);
 
   return (
     <>
@@ -290,6 +292,36 @@ const homepage = () => {
           desc="Vigo School is a leading school ERP software that brings ease to the lives of all school stakeholders, including admins, teachers, students, and parents."
           benefits={benefits} />
 
+        <div className="bg-purple-100 py-10 text-center">
+          <h2 className="text-3xl font-bold text-gray-800">
+            Select Your Role To Setup Your School
+          </h2>
+          <p className="text-gray-600 mt-1">( In 2 Steps Only )</p>
+
+          <div className="flex justify-center flex-wrap xl:gap-6 gap-1 mt-10">
+            {roles.map((role) => (
+              <div
+                key={role.label}
+                onClick={() => setSelectedRole(role.label)}
+                className={`sm:w-52 w-32 sm:h-40 h-32  bg-white rounded-lg shadow-md flex flex-col items-center justify-center border-2 cursor-pointer transition-all duration-300 ${selectedRole === role.label
+                  ? "border-blue-500 ring-2 ring-blue-400"
+                  : "border-transparent"
+                  }`}
+              >
+                <Image src={role.image} alt={role.label} width={50} height={10} className="sm:w-16 sm:h-16 mb-2" />
+                <p className="font-semibold text-sm">{role.label}</p>
+              </div>
+            ))}
+          </div>
+
+          <button
+            className="mt-8 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-all"
+            disabled={!selectedRole} 
+          >
+            <Link href="/roles" target="blank">
+            Next</Link>
+          </button>
+        </div>
 
 
         <Plans
