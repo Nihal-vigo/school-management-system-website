@@ -10,7 +10,6 @@ import { LiaCheckCircleSolid } from 'react-icons/lia';
 import Button from '../components/Button';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 import BuildTask from '../components/BuildTask';
-import Life from '../components/Life';
 
 
 
@@ -189,7 +188,6 @@ export default function career({ initialData }) {
                     </div>
                 </section>
 
-                <Life />
 
                 <BuildTask />
 

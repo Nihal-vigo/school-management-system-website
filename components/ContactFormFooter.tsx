@@ -7,13 +7,13 @@ import ContactForm from "./ContactForm";
 import PopupForm from "./PopupForm";
 
 const locationCards = [
-    {
-        title: "India",
-        decs: "250, Janak Marg, Hanuman Nagar Extension, Officers Campus Colony, Jaswant Nagar, Jaipur, Rajasthan 302012",
-        img: "/images/footer/india.svg",
-        mail: "contact@vigorousit.com",
-        number: "+91 82095 14612"
-    },
+    // {
+    //     title: "India",
+    //     decs: "250, Janak Marg, Hanuman Nagar Extension, Officers Campus Colony, Jaswant Nagar, Jaipur, Rajasthan 302012",
+    //     img: "/images/footer/india.svg",
+    //     mail: "contact@vigorousit.com",
+    //     number: "+91 82095 14612"
+    // },
     {
         title: "United Kingdom",
         decs: "Birmingham, Uk",
@@ -30,7 +30,7 @@ const ContactFormFooter = () => {
             <div className="w-full mx-auto space-y-6 2xl:w-9/12  max-w-7xl">
                 <h2 className='text-secondary lg:text-4xl text-3xl text-center'>Let’s Get In Touch</h2>
                 <p className="lg:text-md text-base text-center text-white">Our expert consultants will reach out within 24 hours.</p>
-                <div className="lg:flex lg:divide lg:divide-x-2 py-5">
+                <div className="lg:flex items-center lg:divide lg:divide-x-2 py-5">
                     <div className="xl:w-1/2 lg:w-2/5 w-full mx-auto xl:px-2 ">
                         {locationCards.map((elem, index) => {
                             const { title, decs, img, mail, number } = elem;

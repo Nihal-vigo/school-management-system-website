@@ -7,7 +7,7 @@ import { BsSuitcaseLg } from 'react-icons/bs';
 import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import { FaLaptopCode } from 'react-icons/fa6';
-  
+
 
 const BuildTask = dynamic(() => import('../components/BuildTask'), {
   loading: () => <p>Loading...</p>,
@@ -96,7 +96,9 @@ export default function Contact(props) {
         <div className='xl:w-1/2 w-full mx-auto p-2  '>
           <div className="wpb_raw_code wpb_content_element wpb_raw_html" >
             <div className="wpb_wrapper">
-              <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222.3380238326932!2d75.7397929011729!3d26.922265053857455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db367adcc873b%3A0xbe79e60941c05e9a!2s250%2C%20Janak%20Marg!5e0!3m2!1sen!2sin!4v1738127244490!5m2!1sen!2sin" width="100%" height="370" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              {/* <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222.3380238326932!2d75.7397929011729!3d26.922265053857455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db367adcc873b%3A0xbe79e60941c05e9a!2s250%2C%20Janak%20Marg!5e0!3m2!1sen!2sin!4v1738127244490!5m2!1sen!2sin" width="100%" height="370" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
+
+              <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.084485494637!2d-122.41941518468164!3d37.774929779759595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2e44a349%3A0x3c5e3e4f9ffabeed!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1614030258460!5m2!1sen!2sus" width="100%" height="370" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -152,9 +154,9 @@ export default function Contact(props) {
         </div>
       </section>
       <BuildTask />
-       
+
     </>
   )
 }
 
-  
+
