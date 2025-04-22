@@ -14,52 +14,13 @@ import Offer from "../components/Offer";
 import Features from "../components/Features";
 import FaqSection from "../components/FaqSection ";
 import ClientTestimonial from "../components/ClientsTestimonials";
+import { HiAcademicCap } from "react-icons/hi2";
+import { PiStudentFill } from "react-icons/pi";
+import { MdOutlineEmojiTransportation } from "react-icons/md";
+import { BiSolidReport } from "react-icons/bi";
+import { BsCashCoin } from "react-icons/bs";
+import { IoPeopleCircleOutline } from "react-icons/io5";
 
-
-const Button = dynamic(() => import('../components/Button'), {
-  loading: () => <p>Loading...</p>,
-})
-
-const MobileBannerForm = dynamic(() => import('../components/MobileBannerForm'), {
-  loading: () => <p>Loading...</p>,
-})
-
-const ContactForm = dynamic(() => import('../components/ContactForm'), {
-  loading: () => <p>Loading...</p>,
-})
-
-const ServicesIndex = dynamic(() => import('../components/ServicesIndex'), {
-  loading: () => <p>Loading...</p>,
-})
-
-const PartnersLogo = dynamic(() => import('../components/PartnersLogo'), {
-  loading: () => <p>Loading...</p>,
-})
-
-const CaseStudy = dynamic(() => import('../components/CaseStudy'), {
-  loading: () => <p>Loading...</p>,
-})
-
-const BuildTask = dynamic(() => import('../components/BuildTask'), {
-  loading: () => <p>Loading...</p>,
-})
-
-const Industries = dynamic(() => import('../components/Industries'), {
-  loading: () => <p>Loading...</p>,
-})
-
-
-const Testimonials = dynamic(() => import('../components/Testimonials'), {
-  loading: () => <p>Loading...</p>,
-})
-
-const CallToAction = dynamic(() => import('../components/CallToAction'), {
-  loading: () => <p>Loading...</p>,
-})
-
-const Promotional = dynamic(() => import('../components/Promotional'), {
-  loading: () => <p>Loading...</p>,
-})
 
 const Header = dynamic(() => import('../components/Header'), {
   loading: () => <p>Loading...</p>,
@@ -70,11 +31,36 @@ const HeroSection = dynamic(() => import('../components/HeroSection'), {
   loading: () => <p>Loading...</p>,
 })
 
-const { offer, TeachersPanel, ParentsPanel, AdminPanel, mobile, website, quality, marketing, infrastructure, tabs, tabFeatures, benefits, plans ,faqDataOne,faqDataTwo} = PageData;
+const { offer, TeachersPanel, ParentsPanel, AdminPanel, tabFeatures, benefits, plans, faqDataOne, faqDataTwo } = PageData;
 
+const tabs = [
+  {
+    "icon": <HiAcademicCap size={30}  className=""/>,
+    "title": "Academics Management"
+  },
+  {
+    "icon": <PiStudentFill size={30}  className=""/>,
+    "title": "Student Management"
+  },
+  {
+    "icon": <MdOutlineEmojiTransportation size={30}  className=""/>,
+    "title": "Transportation/Library /Hostel"
+  },
+  {
+    "icon": <BiSolidReport size={30}  className=""/>,
+    "title": "Exam Management"
+  },
+  {
+    "icon": <BsCashCoin size={30}  className=""/>,
+    "title": "Payroll & Finance Management"
+  },
+  {
+    "icon": <IoPeopleCircleOutline size={30}  className=""/>,
+    "title": "Employee/HRM Management"
+  }
+]
 
-
-const homepage = ({ initialData }) => {
+const homepage = () => {
 
   return (
     <>
@@ -177,8 +163,8 @@ const homepage = ({ initialData }) => {
         <Features title={"Vigo Offers Effortless Operations Handling With Its Advanced Features"} desc={"With a clean and intuitive UX/UI, Vigo School is a user-friendly and powerful software with a variety of add-ons. "} tabFeatures={tabFeatures} tabs={tabs} />
 
         <FaqSection faqDataOne={faqDataOne} faqDataTwo={faqDataTwo} />
-  
-  <ClientTestimonial/>
+
+        <ClientTestimonial />
 
       </section>
     </>

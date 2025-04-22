@@ -7,7 +7,7 @@ const Panels = ({
   decs,
   PanelOne,
   PanelTwo,
-  PanelThree= undefined,
+  PanelThree = undefined,
   AdminPanel,
   AdminTech,
   PanelOneTech,
@@ -16,11 +16,11 @@ const Panels = ({
   AdminImage,
   PanelOneImage,
   PanelTwoImage,
-  PanelThreeImage= undefined,
+  PanelThreeImage = undefined,
   PanelIconsOne,
   PanelIconsTwo,
   PanelIconsThree,
-  PanelIconsFour= undefined,
+  PanelIconsFour = undefined,
   types,
 }) => {
   const [admin, setAdmin] = useState(0);
@@ -81,7 +81,7 @@ const Panels = ({
                 {desc}
               </p>
             </div>
-            
+
           </div>
           {/* <p className="w-full h-[1px] border-transparent bg-gradient-to-r from-[#ffffff] via-black/50 to-[#ffffff] bg-clip-border"></p> */}
         </div>
@@ -119,19 +119,19 @@ const Panels = ({
       data: PanelThree,
       icons: PanelIconsFour,
     },
-  ].filter(panel => panel.tech); 
+  ].filter(panel => panel.tech);
 
   return (
     <section className="md:py-10 py-5" id="panel">
       <div className="mx-auto w-full font-nunito">
         <div className="flex flex-col items-center justify-center space-y-2 text-center">
-          <h2 className="lg:text-4xl text-3xl font-semibold text-primary xl:leading-[2.5rem] font-inter">
+          <h2 className="lg:text-4xl sm:text-3xl text-2xl font-semibold text-primary xl:leading-[2.5rem] font-inter">
             {title}
           </h2>
           <p className="lg:text-md text-base text-ternary">{decs}</p>
         </div>
         <div className="pt-10">
-          <div className={`md:flex md:justify-between items-center md:border border-gray-700 md:rounded-full md:mx-auto overflow-x-auto slidenone ${filteredPanels.length > 3 ? "md:w-[50rem]" : "md:w-[36rem]"
+          <div className={`md:flex md:justify-between md:bg-transparent bg-White items-center border md:border-gray-700 md:rounded-full md:mx-auto overflow-x-auto slidenone ${filteredPanels.length > 3 ? "md:w-[50rem]" : "md:w-[36rem]"
             } w-[99%] mx-auto`}>
 
             {filteredPanels.map((panel, index) => (
@@ -139,9 +139,9 @@ const Panels = ({
                 <p
                   ref={refs[index]}
                   onClick={() => handleTabClick(index)}
-                  className={`whitespace-nowrap px-6 py-2 lg:text-lg text-md font-bold capitalize cursor-pointer md:text-left text-center ${admin === index
-                      ? "bg-primary text-white "
-                      : "bg-transparent text-ternary"
+                  className={`whitespace-nowrap px-6 py-2 lg:text-lg text-md font-bold capitalize cursor-pointer md:text-left md:border-none border-b text-center ${admin === index
+                    ? "bg-primary text-white "
+                    : "bg-transparent text-ternary"
                     }`}
                 >
                   {panel.tech}
@@ -151,11 +151,11 @@ const Panels = ({
           </div>
           <div className="xl:px-10">
             <div
-              className="xl:flex block justify-between items-center w-full pt-10"
+              className="xl:flex block justify-between items-center w-full pt-10 "
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <div className="2xl:w-[30%] xl:w-1/3 md:w-[40%] w-[80%] mx-auto flex justify-center items-center bg-gradient-to-t from-transparent to-white max-h-[610px]">
+              <div className="group 2xl:w-[30%] xl:w-1/3 md:w-[40%] w-[80%] mx-auto flex justify-center items-center relative mt-10 hover:-mt-10 transition-all duration-300">
                 <Image
                   src={filteredPanels[admin].image}
                   alt={filteredPanels[admin].alt}
@@ -166,8 +166,13 @@ const Panels = ({
                   unoptimized={true}
                   priority={false}
                   loading="lazy"
+                  className="object-contain"
                 />
+                {/* White bar at bottom */}
+                <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-b  from-transparent via-white/85 to-white opacity-100 group-hover:opacity-0  transition-opacity duration-500 pointer-events-none ease-in-out" />
               </div>
+
+
               <div className="xl:w-[70%] w-[99%] flex items-center justify-center ">
                 {renderPanelContent(filteredPanels[admin].data, filteredPanels[admin].icons)}
               </div>

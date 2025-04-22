@@ -21,7 +21,7 @@ const About = ({ title, paraOne, paraTwo, paraThree, btnName, img, imgTitle }) =
                 <div className='lg:w-1/2 space-y-5 '>
                     <div className="lg:text-md text-base text-ternary">
                         <div className='space-y-7'>
-                            <h2 className="font-semibold lg:text-4xl text-3xl text-primary font-inter text-center lg:text-left">
+                            <h2 className="font-semibold lg:text-4xl sm:text-3xl text-2xl text-primary font-inter text-center lg:text-left">
                                 {title}
                             </h2>
 

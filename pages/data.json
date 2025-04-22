@@ -622,16 +622,11 @@
       "desc": "Our CMS-based website for managing school-related tasks is integrated with Vigo school software, which lets it manage operations efficiently. This integration helps these sites to upload/change academic schedules, curricula, and daily updates with ease."
     }
   ],
-  "tabs": [
-    "Academics Management",
-    "Student Management",
-    "Transportation/Library /Hostel",
-    "Exam Management",
-    "Payroll & Finance Management",
-    "Employee/HRM Management"
-  ],
+ 
   "tabFeatures": {
-    "Academics Management": [
+    "Academics Management": {
+      "image": "/images/academics-management-info.webp",
+      "features": [
       {
         "icon": "🚌",
         "title": "Subject & Syllabus Builder",
@@ -677,8 +672,10 @@
         "title": "Online Submission Panel",
         "description": "It helps students by offering a seamless assignment and other data like  PDFs, videos, and code files, submitting offerings, while teachers also get easy access to all that stuff."
       }
-    ],
-    "Student Management": [
+      ]},
+    "Student Management": {
+      "image": "/images/student-management-info.webp",
+      "features": [
       {
         "icon": "🚌",
         "title": "Smart Admission",
@@ -724,8 +721,10 @@
         "title": "Task Management",
         "description": "The administration has the credibility to assign specific tasks to targeted students. An inbuilt personalized chat box allows students to chat with teachers and administrators to get extra information regarding assigned tasks."
       }
-    ],
-    "Transportation/Library /Hostel": [
+    ]},
+    "Transportation/Library /Hostel": {
+      "image": "/images/transportation-library-hostel-info.webp",
+      "features": [
       {
         "icon": "🚌",
         "title": "Live Vehicle Tracking",
@@ -771,8 +770,10 @@
         "title": "Hostel Types And Room Allocation",
         "description": "With Vigo School, which is known as one of the best school management software, we make hostel management effortless. Now, you can settle in hostels and rooms according to your preference."
       }
-    ],
-    "Exam Management": [
+    ]},
+    "Exam Management": {
+      "image": "/images/exam-management-info.webp",
+      "features": [
       {
         "icon": "📘",
         "title": "Online/Offline",
@@ -818,8 +819,10 @@
         "title": "Eligibility Alerts via Attendance",
         "description": "With the inbuilt feature of analyzing the exam entrance criteria, Vigo school keeps such students (with lower attendance levels) off the list of examinees."
       }
-    ],
-    "Payroll & Finance Management": [
+    ]},
+    "Payroll & Finance Management":{
+      "image": "/images/exam-management-info.webp",
+      "features": [
       {
         "icon": "🎓",
         "title": "Auto Payroll Generation",
@@ -860,8 +863,10 @@
         "title": "Vendor Payment Tracking",
         "description": "Vigo, as the best school management software in India, takes a step ahead and manages this issue by offering a vendor payment tracking feature."
       }
-    ],
-    "Employee/HRM Management": [
+    ]},
+    "Employee/HRM Management": {
+      "image": "/images/transportation-library-hostel-info.webp",
+      "features": [
       {
         "icon": "📝",
         "title": "Smart Employee Recruitment",
@@ -907,7 +912,7 @@
         "title": "Digital Resignation",
         "description": "We make the resignation process hassle-free by offering diverse features like online submission, clearance forms, and feedback collection. This all helps the administration in managing diverse services regarding the resignation process."
       }
-    ]
+    ]}
   },
   "faqDataOne": [
     {

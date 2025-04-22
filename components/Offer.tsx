@@ -4,7 +4,7 @@ const Offer = ({ title, desc, Offer }) => {
     return (
         <div className='mx-auto pt-10 pb-20 lg:w-11/12 w-full max-w-7xl font-nunito'>
             <div className="bg-[url('/images/offer-back1.jpg')] bg-cover bg-center px-4 py-20    text-white text-center">
-                <h2 className="lg:text-4xl text-3xl font-semibold font-inter">
+                <h2 className="lg:text-4xl sm:text-3xl text-2xl font-semibold font-inter">
                     {title}
                 </h2>
                 <p className="lg:text-md text-base mt-4">

@@ -6,7 +6,7 @@ const Benefits = ({ title, desc, benefits }) => {
     return (
         <div className='mx-auto py-10 w-11/12 max-w-7xl font-nunito'>
             <div className="space-y-4 pb-5">
-                <h2 className="text-primary text-center lg:text-4xl text-3xl font-semibold font-inter">{title}</h2>
+                <h2 className="text-primary text-center lg:text-4xl sm:text-3xl text-2xl font-semibold font-inter">{title}</h2>
                 <p className="lg:text-md text-base text-ternary text-center">{desc}</p>
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pt-2 md:w-full sm:w-4/5 w-full mx-auto">

@@ -168,7 +168,7 @@ const Footer = () => {
       <footer className="bg-black font-nunito">
             <ContactFormFooter />
             <div className=" max-w-7xl 2xl:w-9/12 w-11/12 px-4 pb-20 mx-auto xl:flex justify-evenly items-start grid  md:grid-cols-2 grid-cols-1    xl:pt-4 pt-0 gap-6 whitespace-nowrap">
-              <div className="">
+              {/* <div className="">
                 <p className="text-xl font-bold text-secondary pb-2">Services</p>
                 <ul className="mt-4 space-y-2 font-medium text-base border-l border-gray-400 h-[250px] overflow-y-auto slidenone">
                   {services.map((service, index) => (
@@ -186,8 +186,8 @@ const Footer = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-
+              </div> */}
+{/* 
               <div >
                 <p className="text-xl font-bold text-secondary pb-2">Expertise</p>
                 <ul className="mt-4 space-y-2 font-medium text-base border-l border-gray-400 h-[250px] overflow-y-auto slidenone">
@@ -205,7 +205,7 @@ const Footer = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
               <div className="">
                 <p className="text-xl font-bold text-secondary pb-2">Quick Links</p>
@@ -233,6 +233,25 @@ const Footer = () => {
                   <FaPhoneAlt size={17} className="text-white" />&nbsp;
                   <span className="text-white/80 text-md font-medium transition hover:text-white ">
                     <Link passHref={true} href="tel:+918209514612">
+                      +911234567890
+                    </Link>
+                  </span>
+                </div>
+                <div className="text-secondary flex gap-3 w-full items-center">
+                  <span><FaEnvelopeOpenText size={17} className="text-white" /></span>
+                  <span className="text-white/80 text-md font-medium transition hover:text-white">
+                    <Link passHref={true} href="mailto:contact@vigorousit.com">
+                      abc@gmail.com
+                    </Link>
+                  </span>
+                </div>
+
+                {/* <div className='space-y-3'>
+                <p className="text-xl font-bold text-secondary pb-2">Contact</p>
+                <div className="text-secondary flex gap-1 w-full items-center mt-4">
+                  <FaPhoneAlt size={17} className="text-white" />&nbsp;
+                  <span className="text-white/80 text-md font-medium transition hover:text-white ">
+                    <Link passHref={true} href="tel:+918209514612">
                       +91 82095 14612
                     </Link>
                   </span>
@@ -244,8 +263,8 @@ const Footer = () => {
                       contact@vigorousit.com
                     </Link>
                   </span>
-                </div>
-
+                </div> */}
+{/* 
                 <p className="text-xl font-bold text-secondary pt-5">Follow Us</p>
                 <ul className="flex gap-5">
                   {socialMediaLinks.map(({ href, label, icon }, index) => (
@@ -255,10 +274,9 @@ const Footer = () => {
                       </Link>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
 
-                <a href="//www.dmca.com/Protection/Status.aspx?ID=5ab9a896-2c72-45f6-93ef-2e6e484440ab" title="DMCA.com Protection Status" 
-                className="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-09.png?ID=5ab9a896-2c72-45f6-93ef-2e6e484440ab" alt="DMCA.com Protection Status" className="w-36 mt-5"/></a> <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+               
               </div>
             </div>
       </footer>

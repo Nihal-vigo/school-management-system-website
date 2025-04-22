@@ -50,7 +50,7 @@ const ClientTestimonial = () => {
     <section className='w-full '>
       <div className="xl:w-2/3 lg:w-3/4  w-11/12 mx-auto md:py-16 py-10 text-black">
         <p className="text-base font-normal text-black text-center pb-5">Trusted by Clients</p>
-        <p className="md:text-4xl text-3xl  font-normal text-black text-center pb-5">What Our Users Say About Vigo School ERP?</p>
+        <p className="lg:text-4xl sm:text-3xl text-2xl  font-normal text-primary text-center pb-5">What Our Users Say About Vigo School ERP?</p>
         <div className="flex md:justify-between justify-center md:gap-0 gap-10 items-center sm:w-4/5  mx-auto  md:flex-nowrap flex-wrap ">
           <div className="flex flex-col justify-center items-center py-5">
             <Image src="/images/testimonial/review-01.png" alt="" title="" width={130} height={200} />
@@ -71,7 +71,7 @@ const ClientTestimonial = () => {
         </div>
         <p className="border-b border-[#22222442] w-5/6 h-[2px] mx-auto"></p>
         <div className=" flex items-center justify-center space-x-5 pt-10 font-nunito">
-          <button title="previous" onClick={previous} className=" md:block hidden px-1 py-1 text-black border rounded-full hover:text-white transition-all duration-200 bg-[#F0F2FA] hover:bg-primary">
+          <button title="previous" onClick={previous} className=" md:block hidden px-1 py-1 text-black border rounded-full hover:text-white transition-all duration-200 bg-[#F0F2FA] hover:bg-secondary">
             <BiChevronLeft className='text-[1.9rem]' />
           </button>
 
@@ -79,14 +79,14 @@ const ClientTestimonial = () => {
             {testimonial.map((elem,index) => {
               const { desc, fullName } = elem;
               return (
-                <div key={index} className=' text-black text-center  space-y-10'>
+                <div key={index} className=' text-black text-center  space-y-3'>
                   <p className=" md:w-11/12 w-full mx-auto font-light text-base  leading-7  md:px-1 px-0">{desc}</p>
-                  <p className="text-xl">{fullName}</p>
+                  <p className="text-base font-bold mt-3">{fullName}</p>
                 </div>
               );
             })}
           </Slider>
-          <button title="next" onClick={next} className="px-1 py-1 text-black border rounded-full hover:text-white transition-all duration-200 bg-[#F0F2FA] hover:bg-primary md:block hidden">
+          <button title="next" onClick={next} className="px-1 py-1 text-black border rounded-full hover:text-white transition-all duration-200 bg-[#F0F2FA] hover:bg-secondary md:block hidden">
             <BiChevronRight className='text-[1.9rem]' />
           </button>
         </div>

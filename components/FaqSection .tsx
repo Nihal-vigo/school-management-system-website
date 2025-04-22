@@ -13,9 +13,8 @@ export default function FaqSection({ faqDataOne, faqDataTwo }) {
   return (
     <section className="bg-[url('/images/faq-bg.jpg')] bg-cover">
       <div className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12 max-w-7xl lg:px-0 md:px-6 px-0 py-10">
-        <div className="">
           <div className="space-y-4 w-full">
-            <h3 className="font-bold md:text-4xl text-3xl  text-white text-center 2xl:leading-[3.5rem] xl:leading-[2.5rem] leading-[2rem] capitalize">
+            <h3 className="font-bold lg:text-4xl sm:text-3xl text-2xl  text-white text-center 2xl:leading-[3.5rem] xl:leading-[2.5rem] leading-[2rem] capitalize">
            Frequently Asked Questions
             </h3>
 
@@ -24,10 +23,10 @@ export default function FaqSection({ faqDataOne, faqDataTwo }) {
                 {faqDataOne.map((elem, index) => {
                   const { title, desc } = elem;
                   return (
-                    <div key={index} className="bg-white cursor-pointer w-full  m-3">
+                    <div key={index} className="bg-white cursor-pointer w-full my-3">
                       <div
                         className={currentCountfaqDataOne === index
-                          ? "flex items-start justify-center w-full px-2 py-4 text-base font-medium text-left md:items-center md:px-6  md:text-lg bg-white "
+                          ? "flex items-start justify-center w-full px-4 py-4 text-base font-medium text-left md:items-center md:px-6  md:text-lg bg-white "
                           : "flex items-start justify-center w-full px-4 py-4 text-base font-medium text-left md:items-center md:px-6  md:text-lg"}
                         onClick={() => setCurrentCountfaqDataOne(currentCountfaqDataOne === index ? false : index)}
                       >
@@ -49,10 +48,10 @@ export default function FaqSection({ faqDataOne, faqDataTwo }) {
                 {faqDataTwo.map((elem, index) => {
                   const { title, desc } = elem;
                   return (
-                    <div key={index} className="bg-white cursor-pointer w-full m-3">
+                    <div key={index} className="bg-white cursor-pointer w-full my-3">
                       <div
                         className={currentCountfaqDataTwo === index
-                          ? "flex items-start justify-center w-full px-2 py-4 text-base font-medium text-left md:items-center md:px-6  md:text-lg bg-white "
+                          ? "flex items-start justify-center w-full px-4 py-4 text-base font-medium text-left md:items-center md:px-6  md:text-lg bg-white "
                           : "flex items-start justify-center w-full px-4 py-4 text-base font-medium text-left md:items-center md:px-6  md:text-lg"}
                         onClick={() => setCurrentCountfaqDataTwo(currentCountfaqDataTwo === index ? false : index)}
                       >
@@ -72,7 +71,6 @@ export default function FaqSection({ faqDataOne, faqDataTwo }) {
             </div>
 
           </div>
-        </div>
       </div>
 
     </section>

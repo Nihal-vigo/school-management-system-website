@@ -5,7 +5,7 @@ const Plans = ({ title, desc, Plans }) => {
     return (
         <div className='mx-auto py-10 w-11/12 max-w-7xl font-nunito'>
             <div className="space-y-4 pb-5">
-                <h2 className="text-primary text-center lg:text-4xl text-3xl font-semibold font-inter">{title}</h2>
+                <h2 className="text-primary text-center lg:text-4xl sm:text-3xl text-2xl  font-semibold font-inter">{title}</h2>
                 <p className="lg:text-md text-base text-ternary text-center">{desc}</p>
             </div>
             <div className="pt-2 w-full mx-auto overflow-x-auto">

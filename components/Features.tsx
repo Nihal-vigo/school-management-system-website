@@ -6,7 +6,7 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-yellow-50 ">
-      <h1 className="md:text-4xl  text-3xl font-bold text-center mb-2 ">
+      <h1 className="lg:text-4xl sm:text-3xl text-2xl  font-bold text-center mb-2 ">
         {title}
       </h1>
       <p className="text-center text-gray-600 mb-6 font-nunito">
@@ -15,14 +15,16 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
 
       {/* Tabs */}
       <div className="flex flex-wrap justify-center gap-4 font-inter w-11/12 mx-auto md:p-6">
-        {tabs.map((tab) => (
+        {tabs.map((tab, index) => (
           <div
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={`cursor-pointer px-4 py-2 rounded-xl shadow text-center w-56 md:h-44 h-36 transition-all duration-300 flex items-center justify-center
-                 ${activeTab === tab ? "bg-primary text-white border-b-4 border-transparent" : "bg-white hover:bg-gray-100 border-b-4 border-primary"}`}
+            key={index}
+            onClick={() => setActiveTab(tab.title)}
+            className={`cursor-pointer px-4 py-2 rounded-xl shadow text-center  sm:w-56 w-full md:h-44 h-36 transition-all duration-300 flex flex-col items-center justify-center hover:bg-primary hover:text-white hover:border-b-4 hover:border-tranparent
+                 ${activeTab === tab.title ? "bg-primary text-white border-b-4 border-transparent" : "bg-white hover:bg-gray-100 border-b-4 border-primary"}`}
           >
-            {tab}
+            {/* <Image src={tab.img} alt={''} width={70} height={50} className='bg-black rounded-2xl p-2 '/> */}
+           <p>{tab.icon}</p> 
+            {tab.title}
           </div>
 
         ))}
@@ -30,13 +32,13 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
 
       {/* Feature Cards */}
 
-      <div className="flex justify-center items-start relative p-0">
+      <div className="flex md:flex-row flex-col justify-center items-center relative p-0">
         {/* Left Side Image */}
-        <div className="w-[35%] xl:block hidden relative z-10">
-          <div className="bg-primary flex justify-start items-start py-28 rounded-r-2xl">
+        <div className="md:w-[35%]  xl:block md:hidden relative z-10 md:pt-0 pt-10">
+          <div className="bg-primary flex justify-start items-start md:py-36 md:rounded-r-2xl ">
             <Image
-              src="/images/exam-management-info.webp"
-              className="w-[80%]"
+              src={tabFeatures[activeTab]?.image}
+              className="md:w-[80%] w-full"
               alt=""
               width={600}
               height={900}
@@ -45,7 +47,7 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
         </div>
 
         {/* Right Side Content */}
-        <div className="w-full xl:w-[65%] flex justify-end items-end py-20 relative p-6">
+        <div className="w-[95%] xl:w-[68%] flex justify-end items-end py-20 relative xl:-ml-10 ml-0 z-50">
           {/* Centered Tab Title */}
           <p className="absolute left-1/2 top-16 transform -translate-x-1/2 w-72 text-center bg-primary text-white px-4 py-2 rounded-xl z-50">
             {activeTab}
@@ -53,10 +55,10 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
 
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1250px] font-nunito border bg-white p-8 rounded-2xl">
-            {tabFeatures[activeTab]?.map((feature, index) => (
+            {tabFeatures[activeTab]?.features?.map((feature, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden bg-white p-3 border border-transparent hover:border-gray-300 transition duration-300 text-center h-56 flex flex-col justify-center items-center"
+                className="group sm:mt-0 mt-5 relative overflow-hidden bg-white p-3 border border-transparent hover:border-secondary transition duration-300 text-center sm:h-56 flex flex-col justify-center items-center"
               >
                 <div className="text-4xl mb-3 group-hover:hidden transition-opacity duration-300">
                   {feature.icon}
@@ -65,6 +67,8 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
                 <h2 className="text-xl font-semibold mb-2 transform transition-all duration-300 -translate-y-3 group-hover:-translate-y-0">
                   {feature.title}
                 </h2>
+
+                <p className='w-1/6 h-[2px] mx-auto bg-transparent group-hover:bg-secondary'></p>
 
                 <p className="text-gray-600 text-sm line-clamp-2 group-hover:line-clamp-none transform transition-all duration-300 translate-y-2 group-hover:translate-y-1">
                   {feature.description}
