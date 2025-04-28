@@ -8,6 +8,8 @@ import $ from 'jquery';
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 // import { company, expertise, industry, services } from "./DesktopNav";
 import { GrUserExpert } from "react-icons/gr";
+import Login from "./Login";
+import Signup from "./SignUp";
 
 
 
@@ -95,6 +97,25 @@ export default function MobileNav() {
     }
   });
 
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isSignupOpen, setIsSignupOpen] = useState(false);
+
+  // Toggle login/signup modal
+  const openSignup = () => {
+    setIsSignupOpen(true);
+    setIsLoginOpen(false); // Ensure login modal is closed
+  };
+
+  const openLogin = () => {
+    setIsLoginOpen(true);
+    setIsSignupOpen(false); // Ensure signup modal is closed
+  };
+
+  const closeModal = () => {
+    setIsSignupOpen(false);
+    setIsLoginOpen(false); // Close both modals
+  };
+
   return (
     <div className="headered top-0 z-20 bg-transparent fixed w-full">
       <nav className=" flex items-center justify-between w-full px-4 mx-auto 2xl:w-9/12 xl:w-10/12 md:w-11/12 lg:px-0 h-12 pt-2">
@@ -127,7 +148,8 @@ export default function MobileNav() {
             className="absolute inset-0 w-full h-full transition-all duration-500 ease-out bg-gray-900 "></span>
           <div
             id="slideover"
-            className="md:w-96 w-80 bg-[#092F5C]  h-full absolute right-0 duration-300 ease-out transition-all translate-x-full overflow-scroll">
+            className="md:w-96 w-80 bg-[#092F5C]  h-[100dvh] absolute  right-0 duration-300 ease-out transition-all translate-x-full overflow-scroll">
+              <div>
             <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-2 bg-[#092F5C]">
               <p className="text-[#FFFFFF] text-[17.5px] font-semibold">
                 Menu
@@ -139,7 +161,31 @@ export default function MobileNav() {
                 <VscChromeClose size={20} className="text-white" />
               </span>
             </div>
-            <div className="font-medium text-white divide-y divide-white/10">
+            <div className="font-medium text-white divide-y divide-white/10 flex flex-col justify-between ">
+              <Link
+                onClick={() => toggleSlideover()}
+                href="/"
+                passHref={true}
+              >
+                {" "}
+                <p className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                  <FiHome className="text-[#fff]" size={22} />
+                  <span>Home</span>
+                </p>
+              </Link>
+
+              <Link
+                onClick={() => toggleSlideover()}
+                href="/"
+                passHref={true}
+              >
+                {" "}
+                <p className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                  <FiHome className="text-[#fff]" size={22} />
+                  <span>Home</span>
+                </p>
+              </Link>
+
               <Link
                 onClick={() => toggleSlideover()}
                 href="/"
@@ -320,6 +366,33 @@ export default function MobileNav() {
                 </div>
               </div> */}
 
+            </div>
+            </div>
+            <div className="flex-col gap-3  text-white text-sm sticky bottom-0 z-20 flex items-center justify-between px-6 py-2 bg-[#092F5C]">
+              <button className="w-11/12 py-1 rounded-md bg-secondary hover:bg-primary" onClick={openSignup}>
+                Signup
+              </button>
+              <button className="w-11/12 py-1 rounded-md bg-secondary hover:bg-primary" onClick={openLogin}>
+                Login
+              </button>
+
+              {(isLoginOpen || isSignupOpen) && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                  <div className="bg-white w-full max-w-3xl p-6 rounded-lg shadow-lg flex relative">
+                    <button className="absolute top-2 right-2 text-gray-500 hover:text-black" onClick={closeModal}>
+                      ✕
+                    </button>
+
+                    <div className="w-full md:w-1/2 p-8">
+                      {isLoginOpen ? (
+                        <Login onSwitch={() => { setIsLoginOpen(false); setIsSignupOpen(true); }} onClose={closeModal} isOpen={openLogin} />
+                      ) : (
+                        <Signup onSwitch={() => { setIsSignupOpen(false); setIsLoginOpen(true); }} onClose={closeModal} isOpen={openSignup} />
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -21,6 +21,7 @@ import { BiSolidReport } from "react-icons/bi";
 import { BsCashCoin } from "react-icons/bs";
 import { IoPeopleCircleOutline } from "react-icons/io5";
 import { FcOk } from "react-icons/fc";
+import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
 import { useRouter } from "next/router";
 const Header = dynamic(() => import('../components/Header'), {
@@ -175,6 +176,7 @@ const plans = [
   }
 ]
 
+
 const { offer, TeachersPanel, ParentsPanel, AdminPanel, tabFeatures, benefits, faqDataOne, faqDataTwo, roles } = PageData;
 
 const tabs = [
@@ -244,7 +246,7 @@ const homepage = () => {
                 <HeroSection
                   title="School Management Software"
                   titleOne=""
-                  para="Vigo School is a feature-packed, modern, and cloud-based school management software that manages academic workload through streamlining operations and enhanced efficiency."
+                  para="VigoCamp is a feature-packed, modern, and cloud-based school management software that manages academic workload through streamlining operations and enhanced efficiency."
                   buttonCount={1}
                   buttonNames={[""]}
                   callToActionLine="" />
@@ -263,8 +265,8 @@ const homepage = () => {
         </div>
 
         <About
-          title={"Welcome To Vigo School: All-In-One School ERP Software"}
-          paraOne="We take charge of enhancing the school’s efficiency and letting them manage all school operations with an all-in-one powerful platform. Vigo school software is specifically helpful in offering a digitally connected school ecosystem, which makes it a perfect software that has the power to fulfil the needs of modern-day educational institutions. It makes the communication process easier with integrations like WhatsApp/SMS APIs, while further integrations play an important role in offering a paperless and centralized administrative system."
+          title={"Welcome To VigoCamp: All-In-One School ERP Software"}
+          paraOne="We take charge of enhancing the school’s efficiency and letting them manage all school operations with an all-in-one powerful platform. VigoCamp software is specifically helpful in offering a digitally connected school ecosystem, which makes it a perfect software that has the power to fulfil the needs of modern-day educational institutions. It makes the communication process easier with integrations like WhatsApp/SMS APIs, while further integrations play an important role in offering a paperless and centralized administrative system."
           paraTwo=""
           paraThree="" btnName={undefined}
           img="/images/expertise/travel-app/about-img.webp"
@@ -272,8 +274,8 @@ const homepage = () => {
         />
 
         <Panels
-          title="Vigo School Management Software Panel Features"
-          decs="Vigo School makes it easy for every stakeholder, including admins, students/parents, and teachers, to contribute to the institute."
+          title="VigoCamp Management Software Panel Features"
+          decs="VigoCamp makes it easy for every stakeholder, including admins, students/parents, and teachers, to contribute to the institute."
           PanelOne={TeachersPanel}
           PanelTwo={ParentsPanel}
           AdminPanel={AdminPanel}
@@ -289,25 +291,30 @@ const homepage = () => {
 
         <Benefits
           title="Benefits Of School ERP Software"
-          desc="Vigo School is a leading school ERP software that brings ease to the lives of all school stakeholders, including admins, teachers, students, and parents."
+          desc="VigoCamp is a leading school ERP software that brings ease to the lives of all school stakeholders, including admins, teachers, students, and parents."
           benefits={benefits} />
 
-        <div className="bg-purple-100 py-10 text-center">
-          <h2 className="text-3xl font-bold text-gray-800">
+        <div className="bg-primary py-10 text-center text-white">
+          <h2 className="text-3xl font-bold ">
             Select Your Role To Setup Your School
           </h2>
-          <p className="text-gray-600 mt-1">( In 2 Steps Only )</p>
+          <p className=" mt-1">( In 2 Steps Only )</p>
 
-          <div className="flex justify-center flex-wrap xl:gap-6 gap-1 mt-10">
+          <div className="flex justify-center flex-wrap xl:gap-6 gap-1 mt-10 ">
             {roles.map((role) => (
               <div
                 key={role.label}
                 onClick={() => setSelectedRole(role.label)}
-                className={`sm:w-52 w-32 sm:h-40 h-32  bg-white rounded-lg shadow-md flex flex-col items-center justify-center border-2 cursor-pointer transition-all duration-300 ${selectedRole === role.label
+                className={`sm:w-52 w-32 sm:h-40 h-32  bg-white text-black rounded-lg shadow-md flex flex-col items-center justify-center border-2 cursor-pointer transition-all duration-300 ${selectedRole === role.label
                   ? "border-blue-500 ring-2 ring-blue-400"
-                  : "border-transparent"
+                  : "border-transparent hover:border-gray-200 hover:ring-2 hover:ring-gray-400 "
                   }`}
               >
+                {selectedRole === role.label && (
+                  <div className="absolute  bg-blue-500 text-white rounded-full p-1 z-50 inline">
+                    <TiTick />
+                  </div>
+                )}
                 <Image src={role.image} alt={role.label} width={50} height={10} className="sm:w-16 sm:h-16 mb-2" />
                 <p className="font-semibold text-sm">{role.label}</p>
               </div>
@@ -315,27 +322,27 @@ const homepage = () => {
           </div>
 
           <button
-            className="mt-8 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-all"
-            disabled={!selectedRole} 
+            className="mt-8 px-6 py-1.5 text-sm bg-white font-normal text-black rounded hover:bg-secondary hover:text-white transition-all"
+            disabled={!selectedRole}
           >
             <Link href="/roles" target="blank">
-            Next</Link>
+              Next</Link>
           </button>
         </div>
 
 
         <Plans
-          title="Vigo School ERP Pricing – Plans That Bring Growth"
+          title="VigoCamp ERP Pricing – Plans That Bring Growth"
           desc="Vigo offers flexible pricing tailored to your needs that allows school of all scales to enjoy their innovative services to reduce their workload."
           Plans={plans} />
 
 
         <Offer
           title={"What Do We Offer? Get Exact What Makes Your School Competitive"}
-          desc={"Vigo School is one of India's most appreciated school management software from different kinds of reputed resources."}
+          desc={"VigoCamp is one of India's most appreciated school management software from different kinds of reputed resources."}
           Offer={offer} />
 
-        <Features title={"Vigo Offers Effortless Operations Handling With Its Advanced Features"} desc={"With a clean and intuitive UX/UI, Vigo School is a user-friendly and powerful software with a variety of add-ons. "} tabFeatures={tabFeatures} tabs={tabs} />
+        <Features title={"Vigo Offers Effortless Operations Handling With Its Advanced Features"} desc={"With a clean and intuitive UX/UI, VigoCamp is a user-friendly and powerful software with a variety of add-ons. "} tabFeatures={tabFeatures} tabs={tabs} />
 
         <FaqSection faqDataOne={faqDataOne} faqDataTwo={faqDataTwo} />
 

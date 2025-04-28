@@ -128,6 +128,7 @@ const Panels = ({
           <h2 className="lg:text-4xl sm:text-3xl text-2xl font-semibold text-primary xl:leading-[2.5rem] font-inter">
             {title}
           </h2>
+          <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className=''/>
           <p className="lg:text-md text-base text-ternary">{decs}</p>
         </div>
         <div className="pt-10">

@@ -9,6 +9,9 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
       <h1 className="lg:text-4xl sm:text-3xl text-2xl  font-bold text-center mb-2 ">
         {title}
       </h1>
+      <div className='flex justify-center items-center'>
+      <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className=''/>
+      </div>
       <p className="text-center text-gray-600 mb-6 font-nunito">
         {desc}
       </p>

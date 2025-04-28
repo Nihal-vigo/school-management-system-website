@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -17,7 +18,9 @@ export default function FaqSection({ faqDataOne, faqDataTwo }) {
           <h3 className="font-bold lg:text-4xl sm:text-3xl text-2xl  text-white text-center 2xl:leading-[3.5rem] xl:leading-[2.5rem] leading-[2rem] capitalize">
             Frequently Asked Questions
           </h3>
-
+          <div className='flex justify-center items-center'>
+            <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className='' />
+          </div>
           <div className="lg:flex block gap-20 font-nunito">
             <div className=" lg:w-1/2 w-full">
               {faqDataOne.map((elem, index) => {

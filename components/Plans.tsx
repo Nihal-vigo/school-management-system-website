@@ -1,11 +1,13 @@
+import Image from 'next/image';
 import React from 'react';
 import { BsDot } from 'react-icons/bs';
 
 const Plans = ({ title, desc, Plans }) => {
     return (
         <div className='mx-auto py-10 w-11/12 max-w-7xl font-nunito'>
-            <div className="space-y-4 pb-5">
+            <div className="space-y-4 pb-5 flex flex-col justify-center items-center">
                 <h2 className="text-primary text-center lg:text-4xl sm:text-3xl text-2xl  font-semibold font-inter">{title}</h2>
+                <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className=''/>
                 <p className="lg:text-md text-base text-ternary text-center">{desc}</p>
             </div>
             <div className="pt-2 w-full mx-auto overflow-x-auto">

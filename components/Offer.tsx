@@ -1,12 +1,14 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Offer = ({ title, desc, Offer }) => {
     return (
         <div className='mx-auto pt-10 pb-20 lg:w-11/12 w-full max-w-7xl font-nunito'>
-            <div className="bg-[url('/images/offer-back1.jpg')] bg-cover bg-center px-4 py-20    text-white text-center">
+            <div className="bg-[url('/images/offer-back1.jpg')] bg-cover bg-center px-4 py-20 text-white text-center flex flex-col justify-center items-center">
                 <h2 className="lg:text-4xl sm:text-3xl text-2xl font-semibold font-inter">
                     {title}
                 </h2>
+                <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className=''/>
                 <p className="lg:text-md text-base mt-4">
                     {desc}
                 </p>
