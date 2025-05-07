@@ -1,286 +1,254 @@
-import React from "react";
-import Image from "next/image";
-import { FaFacebook, FaInstagram, FaLinkedin, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaEnvelopeOpenText } from "react-icons/fa";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import dynamic from "next/dynamic";
-import Link from "next/link";
+import Link from 'next/link'
+import React from 'react'
+import { FaEnvelopeOpenText, FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { IoLocationSharp } from 'react-icons/io5'
+import { RiCheckDoubleFill } from 'react-icons/ri'
+import Image from 'next/image'
 
 
-
-const services = [
-  { href: "/services/mobile-app-development", text: "Mobile App Development" },
-  { href: "/services/android-app-development", text: "Android App Development" },
-  { href: "/services/website-development", text: "Website Development" },
-  { href: "/services/ios-app-development", text: "iOS App Development" },
-  { href: "/services/ui-ux-design", text: "UI / UX Design" },
-  { href: "/services/quality-assurance", text: "Quality Assurance" },
-  { href: "/services/digital-marketing", text: "Digital Marketing" },
-  { text: "RPO Services", href: "/services/recruitment-process-outsourcing" },
-  { href: null, text: "Blockchain Development" },
-  { href: null, text: "Cryptocurrency Development" }
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/", label: "About" },
+  { href: "/", label: "Contact" },
 ];
 
-const expertise = [
-  { href: "/expertise/doctor-appointment-app-development", text: "Doctors App Development" },
-  { href: "/expertise/dating-app-development", text: "Dating App Development" },
-  { href: "/expertise/fantasy-sports-app-development", text: "Fantasy Sports App Development" },
-  { href: "/expertise/food-delivery-app-development", text: "Food Delivery App Development" },
-  { text: "Astrology App Development", href: "/expertise/astrology-app-development" },
-  { text: "Real Estate App Development", href: "/expertise/real-estate-app-development" },
-  { text: "Salon App Development", href: "/expertise/salon-app-development" },
-  { text: "Stock Trading App Development", href: "/expertise/stock-trading-app-development" },
-  { text: "Ewallet App Development ", href: "/expertise/ewallet-app-development" },
-  { text: "CA Software Development ", href: "/expertise/ca-software-management-development"}
+const tourLinks = [
+  { href: "/", label: "Package 1" },
+  { href: "/", label: "Package 1" },
+  { href: "/", label: "Package 1" },
+  { href: "/", label: "Package 1" },
+  { href: "/", label: "Package 1" },
 ];
 
-const links = [
-  { href: "/career", text: "Career" },
-  { href: "/about-us", text: "About Us" },
-  { href: "/contact-us", text: "Contact Us" },
-
+const socialLinks = [
+  { href: "", label: "Facebook", icon: FaFacebook },
+  { href: "/", label: "Twitter", icon: FaTwitter },
+  { href: "/", label: "Instagram", icon: FaInstagram },
+  { href: "/", label: "LinkedIn", icon: FaLinkedin },
+  { href: "/", label: "Pinterest", icon: FaPinterest },
+  { href: "/", label: "YouTube", icon: FaYoutube },
 ];
 
-const socialMediaLinks = [
+const contactInfo = [
   {
-    href: "https://www.facebook.com/vigorousitsolutions/",
-    label: "Facebook",
-    icon: <FaFacebook size={24} className="text-white/80 transition hover:text-white" />,
+    icon: <FaPhoneAlt size={17} className="text-white/90 hover:text-white" />,
+    href: "tel:+123456789",
+    label: "+1234567890",
   },
   {
-    href: "https://twitter.com/vigorousit",
-    label: "Twitter",
-    icon: <FaTwitter size={24} className="text-white/80 transition hover:text-white" />,
+    icon: <FaEnvelopeOpenText size={17} className="text-white/90" />,
+    href: "mailto:abc@xyz.com",
+    label: "abc@xyz.com",
   },
   {
-    href: "https://www.instagram.com/vigorousitsolutions/",
-    label: "Instagram",
-    icon: <FaInstagram size={24} className="text-white/80 transition hover:text-white" />,
-  },
-  {
-    href: "https://www.linkedin.com/company/vigorous-it-solutions/",
-    label: "LinkedIn",
-    icon: <FaLinkedin size={24} className="text-white/80 transition hover:text-white" />,
-  },
-  {
-    href: "https://www.pinterest.com/vigorousitsolutions/",
-    label: "Pinterest",
-    icon: <FaPinterest size={24} className="text-white/80 transition hover:text-white" />,
-  },
-  {
-    href: "https://www.youtube.com/@Vigorous-IT-Solutions",
-    label: "YouTube",
-    icon: <FaYoutube size={24} className="text-white/80 transition hover:text-white" />,
+    icon: <IoLocationSharp size={17} className="text-white/90 mt-0.5" />,
+    href: "https://maps.app.goo.gl/k16M8rPogXYgbhNy9",
+    label: "address",
+    target: "_blank",
   },
 ];
-
-const ContactFormFooter = dynamic(() => import('../components/ContactFormFooter'), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-})
 
 const Footer = () => {
   return (
     <>
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "http://schema.org",
-            "@type": "Product",
-            "name": "Vigorous IT Solution",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "ratingCount": "448",
-              "reviewCount": "375"
-            },
+      <div className='w-full pt-40 pb-2 mx-auto lg:block hidden relative bg-secondary  mt-52'>
+        <div className='absolute bg-primary text-white 2xl:w-3/4 w-11/12  lg:rounded-2xl rounded-t-none rounded-b-md -top-[20%] left-2/4 -translate-x-2/4 mx-auto'>
+          <div className='flex w-full items-center '>
+            <div className="space-y-5 w-1/2  p-[25px]">
+              <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
 
-          })
-        }}
-      />
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Vigorous IT Solutions",
-            "image": "https://www.vigorousit.com/logo/vigorousit_logo.webp",
-            "@id": "",
-            "url": "https://www.vigorousit.com/",
-            "telephone": "+91 820 951 4612",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "250, Janak Marg, Hanuman Nagar Extension, Officers Campus Colony, Jaswant Nagar,",
-              "addressLocality": "Jaipur, Rajasthan",
-              "postalCode": "302021",
-              "addressCountry": "IN"
-            },
-            "openingHoursSpecification": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-              ],
-              "opens": "00:00",
-              "closes": "23:59"
-            },
-            "sameAs": [
-              "https://www.facebook.com/vigorousitsolutions/",
-              "https://twitter.com/vigorousit",
-              "https://www.instagram.com/vigorousitsolutions/",
-              "https://www.youtube.com/@Vigorous-IT-Solutions",
-              "https://www.linkedin.com/company/vigorous-it-solutions/",
-              "https://www.pinterest.com/vigorousitsolutions/"
-            ]
-
-          })
-        }}
-      />
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Corporation",
-            "name": "Vigorous IT Solution",
-            "url": "https://www.vigorousit.com/",
-            "logo": "https://www.vigorousit.com/logo/vigorousit_logo.webp",
-            "sameAs": [
-              "https://www.facebook.com/vigorousitsolutions/",
-              "https://twitter.com/vigorousit",
-              "https://www.instagram.com/vigorousitsolutions/",
-              "https://www.linkedin.com/company/vigorous-it-solutions/",
-              "https://www.pinterest.com/vigorousitsolutions/",
-              "https://www.youtube.com/@Vigorous-IT-Solutions"
-            ]
-          })
-        }}
-      />
-
-      <footer className="bg-black font-nunito">
-            <ContactFormFooter />
-            <div className=" max-w-7xl 2xl:w-9/12 w-11/12 px-4 pb-20 mx-auto xl:flex justify-evenly items-start grid  md:grid-cols-2 grid-cols-1    xl:pt-4 pt-0 gap-6 whitespace-nowrap">
-              {/* <div className="">
-                <p className="text-xl font-bold text-secondary pb-2">Services</p>
-                <ul className="mt-4 space-y-2 font-medium text-base border-l border-gray-400 h-[250px] overflow-y-auto slidenone">
-                  {services.map((service, index) => (
+              <div className="text-[16px] flex flex-col md:gap-2 gap-1">
+                {contactInfo.map(({ icon, href, label, target }, index) => (
+                  <div key={index} className="text-white flex gap-3 w-full items-center">
+                    <span>{icon}</span>
+                    <span className="font-medium transition">
+                      <Link
+                        href={href}
+                        passHref={true}
+                        target={target || undefined}
+                        className="text-white/90 hover:text-white no-underline"
+                      >
+                        {label}
+                      </Link>
+                    </span>
+                  </div>
+                ))}
+                <p className="text-lg font-bold ">Follow Us</p>
+                <ul className="flex gap-4 !p-0 list-none justify-start flex-wrap ">
+                  {socialLinks.map(({ href, label, icon: Icon }, index) => (
                     <li key={index}>
-                      {service.href ? (
-                        <Link passHref={true} href={service.href} className="text-white/80 hover:text-white transition black flex items-center">
-                          <hr className="w-[10px] bg-gray-400 h-[2px]" />
-                          &nbsp;&nbsp;{service.text}
-                        </Link>) :
-
-                        <div className="text-white/80 hover:text-white transition black flex items-center">
-                          <hr className="w-[10px] bg-gray-400 h-[2px]" />
-                          &nbsp;&nbsp;{service.text}
-                        </div>}
-                    </li>
-                  ))}
-                </ul>
-              </div> */}
-{/* 
-              <div >
-                <p className="text-xl font-bold text-secondary pb-2">Expertise</p>
-                <ul className="mt-4 space-y-2 font-medium text-base border-l border-gray-400 h-[250px] overflow-y-auto slidenone">
-                  {expertise.map((expertise, index) => (
-                    <li key={index}>
-                      {expertise.href ?
-                        <Link passHref={true} href={expertise.href} className="text-white/80 hover:text-white transition black flex items-center">
-                          <hr className="w-[10px] bg-gray-400 h-[2px]" />
-                          &nbsp;&nbsp;{expertise.text}
-                        </Link> :
-                        <div className="text-white/80 hover:text-white transition black flex items-center">
-                          <hr className="w-[10px] bg-gray-400 h-[2px]" />
-                          &nbsp;&nbsp;{expertise.text}
-                        </div>}
-                    </li>
-                  ))}
-                </ul>
-              </div> */}
-
-              <div className="">
-                <p className="text-xl font-bold text-secondary pb-2">Quick Links</p>
-                <ul className="mt-4 space-y-2 font-medium text-base border-l border-gray-400">
-                  {links.map((link, index) => (
-                    <li key={index}>
-                      {link.href ? (
-                        <Link passHref={true} href={link.href} className=" text-white/80 transition hover:text-white flex items-center">
-                          <hr className="w-[10px] bg-gray-400 h-[2px] " />
-                          &nbsp;&nbsp;{link.text}
-                        </Link>) :
-                        <div className=" text-white/80 transition hover:text-white flex items-center">
-                          <hr className="w-[10px] bg-gray-400 h-[2px] " />
-                          &nbsp;&nbsp;{link.text}
-                        </div>
-                      }
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className='space-y-3'>
-                <p className="text-xl font-bold text-secondary pb-2">Contact</p>
-                <div className="text-secondary flex gap-1 w-full items-center mt-4">
-                  <FaPhoneAlt size={17} className="text-white" />&nbsp;
-                  <span className="text-white/80 text-md font-medium transition hover:text-white ">
-                    <Link passHref={true} href="tel:+918209514612">
-                      +911234567890
-                    </Link>
-                  </span>
-                </div>
-                <div className="text-secondary flex gap-3 w-full items-center">
-                  <span><FaEnvelopeOpenText size={17} className="text-white" /></span>
-                  <span className="text-white/80 text-md font-medium transition hover:text-white">
-                    <Link passHref={true} href="mailto:contact@vigorousit.com">
-                      abc@gmail.com
-                    </Link>
-                  </span>
-                </div>
-
-                {/* <div className='space-y-3'>
-                <p className="text-xl font-bold text-secondary pb-2">Contact</p>
-                <div className="text-secondary flex gap-1 w-full items-center mt-4">
-                  <FaPhoneAlt size={17} className="text-white" />&nbsp;
-                  <span className="text-white/80 text-md font-medium transition hover:text-white ">
-                    <Link passHref={true} href="tel:+918209514612">
-                      +91 82095 14612
-                    </Link>
-                  </span>
-                </div>
-                <div className="text-secondary flex gap-3 w-full items-center">
-                  <span><FaEnvelopeOpenText size={17} className="text-white" /></span>
-                  <span className="text-white/80 text-md font-medium transition hover:text-white">
-                    <Link passHref={true} href="mailto:contact@vigorousit.com">
-                      contact@vigorousit.com
-                    </Link>
-                  </span>
-                </div> */}
-{/* 
-                <p className="text-xl font-bold text-secondary pt-5">Follow Us</p>
-                <ul className="flex gap-5">
-                  {socialMediaLinks.map(({ href, label, icon }, index) => (
-                    <li key={index}>
-                      <Link passHref href={href} rel="noreferrer" aria-label={label} target="_blank">
-                        {icon}
+                      <Link
+                        passHref={true}
+                        href={href}
+                        rel="noreferrer"
+                        aria-label={label}
+                        target="_blank"
+                        className="text-white/80 transition hover:text-white"
+                      >
+                        <Icon size={24} />
                       </Link>
                     </li>
                   ))}
-                </ul> */}
+                </ul>
+              </div>
 
-               
+            </div>
+            <div className='w-1/2 rounded-r-2xl overflow-hidden'>
+              <div className="wpb_raw_code wpb_content_element wpb_raw_html " >
+                <div className="wpb_wrapper">
+                  <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.084485494637!2d-122.41941518468164!3d37.774929779759595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2e44a349%3A0x3c5e3e4f9ffabeed!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1614030258460!5m2!1sen!2sus" width="100%" height="270" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
               </div>
             </div>
-      </footer>
+          </div>
+        </div>
+
+
+        <div className='text-white text-center pt-24 space-y-10 w-11/12 mx-auto ' >
+          <div className='flex items-start justify-between text-left w-5/6 mx-auto'>
+            <div className="space-y-5 flex-1">
+              <p className="text-[20px] capitalize font-bold !m-0 ">Company</p>
+
+              <div className="text-[16px] flex flex-col md:gap-2 gap-1">
+                {navLinks.map(({ href, label }, index) => (
+                  <Link key={index} href={href} className="no-underline ">
+                    <p className="!m-0 text-[16px] lg:text-[17px]">{label}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className='space-y-5 flex-1'>
+
+              <p className="text-[20px] capitalize font-bold !m-0 ">Packages</p>
+
+              <div className="text-[16px] flex flex-col md:gap-2 gap-1">
+                {tourLinks.map(({ href, label }, index) => (
+                  <Link key={index} href={href} className="no-underline ">
+                    <p className="!m-0 text-[16px] lg:text-[17px]">{label}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="pr-2 flex-1">
+              <div className="space-y-5 px-2">
+                <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
+
+                <div className="text-[16px] flex flex-col md:gap-2 gap-1">
+                  {contactInfo.map(({ icon, href, label, target }, index) => (
+                    <div key={index} className="text-white flex gap-3 w-full items-center">
+                      <span>{icon}</span>
+                      <span className="font-medium transition">
+                        <Link
+                          href={href}
+                          passHref={true}
+                          target={target || undefined}
+                          className="text-white/90 hover:text-white no-underline"
+                        >
+                          {label}
+                        </Link>
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className='flex-1'>
+              <Image src="/logo/vigo-camp-logo.webp" alt='' width={400} height={200} />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      {/* Mobile view */}
+
+      <div className='w-full pt-60 pb-4 mx-auto lg:hidden block relative bg-secondary sm:mt-60 mt-80 text-white'>
+        <div className='absolute  lg:w-5/6 w-11/12  space-y-5 -top-[44%] left-2/4 -translate-x-2/4 mx-auto '>
+          <div className="flex justify-between p-3 gap-4 bg-primary rounded-2xl">
+            <div className="space-y-5  px-2">
+              <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
+
+              <div className="text-[16px] flex flex-col md:gap-2 gap-1">
+                {contactInfo.map(({ icon, href, label, target }, index) => (
+                  <div key={index} className="text-white flex gap-3 w-full items-center">
+                    <span>{icon}</span>
+                    <span className="font-medium transition">
+                      <Link
+                        href={href}
+                        passHref={true}
+                        target={target || undefined}
+                        className="text-white/90 hover:text-white no-underline"
+                      >
+                        {label}
+                      </Link>
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+          <div className="wpb_raw_code wpb_content_element wpb_raw_html rounded-2xl overflow-hidden" >
+            <div className="wpb_wrapper">
+              <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.084485494637!2d-122.41941518468164!3d37.774929779759595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2e44a349%3A0x3c5e3e4f9ffabeed!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1614030258460!5m2!1sen!2sus" width="100%" height="200" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div className="flex  flex-wrap justify-between xl:w-3/5 w-11/12 mx-auto gap-4 text-white ">
+          <div className="space-y-3 ">
+            <p className="text-[20px] capitalize font-bold !m-0 ">Company</p>
+            <div className=" flex flex-col md:gap-2 gap-1">
+              {navLinks.map(({ href, label }, index) => (
+                <Link key={index} href={href} className="no-underline text-white">
+                  <p className="!m-0.5 ">{label}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className='space-y-3  '>
+
+            <p className="text-[20px] capitalize font-bold !m-0 ">Packages</p>
+
+            <div className="flex flex-col md:gap-2 gap-1">
+              {tourLinks.map(({ href, label }, index) => (
+                <Link key={index} href={href} className="no-underline text-white">
+                  <p className="!m-0.5">{label}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-5 sm:w-1/2">
+            <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
+
+            <div className="flex flex-col md:gap-2 gap-1">
+              {contactInfo.map(({ icon, href, label, target }, index) => (
+                <div key={index} className="text-white flex gap-3 w-full items-center">
+                  <span>{icon}</span>
+                  <span className="font-medium transition">
+                    <Link
+                      href={href}
+                      passHref={true}
+                      target={target || undefined}
+                      className="text-white/90 hover:text-white no-underline"
+                    >
+                      {label}
+                    </Link>
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+
+        </div>
+      </div>
     </>
-  );
-};
-export default Footer;
+  )
+}
+
+export default Footer

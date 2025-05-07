@@ -7,7 +7,7 @@ const Login = ({ isOpen, onClose, onSwitch }) => {
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="bg-white shadow-lg rounded-2xl overflow-hidden flex justify-center items-center w-full max-w-5xl relative m-4">
+            <div className="bg-gradient-to-t from-primary to-secondary  shadow-lg rounded-2xl overflow-hidden flex justify-center items-center w-full max-w-5xl relative m-4">
 
                 <button
                     className="absolute top-4 right-4 text-gray-400 cursor-pointer text-2xl z-50"
@@ -15,38 +15,6 @@ const Login = ({ isOpen, onClose, onSwitch }) => {
                 >
                     &times;
                 </button>
-
-                <div className="w-full md:w-1/2 p-8 text-black space-y-4">
-                    <div className='space-y-2'>
-                        <h2 className="text-2xl font-bold  text-black text-center">Login</h2>
-                        <div className='flex justify-center p-0 mt-0'>
-                            <Image src={'/images/section-heading.webp'} alt={''} width={180} height={60} className='' />
-                        </div>
-                    </div>
-                    <form className="space-y-2">
-
-                        <input type="email" placeholder="Enter your email" className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-black" />
-
-                        <input type="password" placeholder="Create a password" className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-black" />
-
-
-                        <button type="submit" className="w-full bg-black text-white rounded-md py-2 !mt-4  hover:bg-gray-800">
-                            Login
-                        </button>
-                    </form>
-
-                    <p className="text-sm text-center text-gray-600 mt-4">
-                        Didn't have an Account?{" "}
-                        <button
-                            onClick={onSwitch}
-                            className="text-black font-medium hover:underline"
-                        >
-                            Sign Up
-                        </button>
-                    </p>
-
-                </div>
-
                 <div className="hidden md:block w-1/2 relative overflow-hidden">
                     <img
                         src="/images/home/pop-up.webp"
@@ -60,6 +28,39 @@ const Login = ({ isOpen, onClose, onSwitch }) => {
                         </h3>
                     </div>
                 </div>
+
+                <div className="w-full md:w-1/2 p-8 text-white space-y-4">
+                    <div className='space-y-2'>
+                        <h2 className="text-2xl font-bold  text-white text-center">Login</h2>
+                        <div className='flex justify-center p-0 mt-0'>
+                            <Image src={'/images/section-heading.webp'} alt={''} width={180} height={60} className='' />
+                        </div>
+                    </div>
+                    <form className="space-y-2">
+
+                        <input type="email" placeholder="Enter your email" className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-black" />
+
+                        <input type="password" placeholder="Create a password" className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-black" />
+
+
+                        <button type="submit" className="w-full bg-black text-white rounded-md py-2 !mt-4  hover:bg-gray-900">
+                            Login
+                        </button>
+                    </form>
+
+                    <p className="text-sm text-center text-white/80 mt-4">
+                        Didn't have an Account?{" "}
+                        <button
+                            onClick={onSwitch}
+                            className="text-white font-medium underline"
+                        >
+                            Sign Up
+                        </button>
+                    </p>
+
+                </div>
+
+                
             </div>
         </div>
     );

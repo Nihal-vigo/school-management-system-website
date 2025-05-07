@@ -52,7 +52,7 @@ html * {
 ::-webkit-scrollbar-thumb {
   background: #092f5c;
   border-radius: 15px;
-  
+
 }
 
 /* Handle on hover */
@@ -449,7 +449,7 @@ html * {
   .gradient-border-bottom {
     position: relative;
   }
-  
+
   .gradient-border-bottom::after {
     content: "";
     position: absolute;
@@ -458,19 +458,120 @@ html * {
     height: .5px;
     width: 100%;
   }
+
   .gradient-border-bottom:nth-child(odd)::after {
     background: linear-gradient(to right, #ffffff, rgba(143, 141, 141, 0.5), #ffffff);
   }
-  
+
   /* Even items: 2, 4, 6, ... */
   .gradient-border-bottom:nth-child(even)::after {
     background: linear-gradient(to right, #ffffff, rgba(143, 141, 141, 0.5), #ffffff);
   }
 }
 
+@keyframes custom-bounce {
+
+  0%,
+  100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.bounce-slow {
+  animation: custom-bounce 5s infinite;
+  /* 3s is the duration, adjust as needed */
+}
+
+@keyframes custom-bounce {
+
+  0%,
+  100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.bounce-slow-one {
+  animation: custom-bounce 12s infinite;
+}
+
+@keyframes custom-bounce {
+
+  0%,
+  100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.bounce-slow-two {
+  animation: custom-bounce 10s infinite;
+}
+
+@keyframes spin-circle {
+  0% {
+    transform: rotate(0deg) translateX(40px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(40px) rotate(-360deg);
+  }
+}
+
+.circle-motion {
+  animation: spin-circle 8s linear infinite;
+}
 
 
+@keyframes half-circle {
+  0% {
+    transform: rotate(0deg) translateX(80px) rotate(0deg);
+  }
 
+  100% {
+    transform: rotate(180deg) translateX(80px) rotate(-180deg);
+  }
+}
 
+.half-circle-motion {
+  animation: half-circle 10s linear infinite alternate;
+}
 
+@keyframes rotate2 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(1440deg);
+    -ms-transform: translate(-50%, -50%) rotate(1440deg);
+    transform: translate(-50%, -50%) rotate(1440deg);
+  }
+}
+
+.orbit {
+  animation: rotate2 80s alternate infinite;
+}
+
+.shape-fill {
+  fill: #fff;
+}
 

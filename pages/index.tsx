@@ -24,6 +24,11 @@ import { FcOk } from "react-icons/fc";
 import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
 import { useRouter } from "next/router";
+import Popup from "../components/Popup";
+import Login from "../components/Login";
+import Signup from "../components/SignUp";
+import { FaUserPlus } from "react-icons/fa";
+import { IoIosArrowRoundForward } from "react-icons/io";
 const Header = dynamic(() => import('../components/Header'), {
   loading: () => <p>Loading...</p>,
 })
@@ -208,6 +213,24 @@ const tabs = [
 
 const homepage = () => {
   const [selectedRole, setSelectedRole] = useState(null);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isSignupOpen, setIsSignupOpen] = useState(false);
+
+  // Toggle login/signup modal
+  const openSignup = () => {
+    setIsSignupOpen(true);
+    setIsLoginOpen(false); // Ensure login modal is closed
+  };
+
+  const openLogin = () => {
+    setIsLoginOpen(true);
+    setIsSignupOpen(false); // Ensure signup modal is closed
+  };
+
+  const closeModal = () => {
+    setIsSignupOpen(false);
+    setIsLoginOpen(false); // Close both modals
+  };
 
   return (
     <>
@@ -238,29 +261,110 @@ const homepage = () => {
       </Head>
 
       <section className="overflow-hidden">
-        <div className="max-width w-full bg-cover bg-slate-300 no-repeat md:pt-0 pt-32">
+        <div className="max-width w-full bg-cover bg-gradient-to-r from-[#09327f] to-[#06183b] text-white  no-repeat md:pt-0 pt-32 relative">
           <div className="relative">
             <Header />
-            <div className="w-11/12 2xl:w-4/5 xl:w-[90%] flex lg:flex-row flex-col md:items-center mx-auto xl:pt-32 sm:pt-28 justify-between md:space-y-0 space-y-10 max-w-7xl  ">
-              <div className="lg:w-1/2 w-full">
-                <HeroSection
-                  title="School Management Software"
-                  titleOne=""
-                  para="VigoCamp is a feature-packed, modern, and cloud-based school management software that manages academic workload through streamlining operations and enhanced efficiency."
-                  buttonCount={1}
-                  buttonNames={[""]}
-                  callToActionLine="" />
-              </div>
+            <div className="w-11/12 lg:w-1/2 mx-auto xl:pt-32 sm:pt-28 !text-center max-w-7xl  ">
+              <div className="space-y-10 w-full py-5 ">
+                <h1 className="md:text-[60px] text-3xl font-bold md:leading-[3.5rem] capitalize font-inter  ">
+                  School Management Software
+                </h1>
+                <p className="lg:text-md text-base font-medium font-nunito relative z-20">
+                  VigoCamp is a feature-packed, modern, and cloud-based school management software that manages academic workload through streamlining operations and enhanced efficiency.
+                </p>
 
-              <div className="xl:w-1/2 lg:w-1/2  ">
-                <Image
-                  src="/images/expertise/travel-app/hero-img.webp"
-                  alt="Travel App Development Company"
-                  title="Travel App Development"
-                  width={600}
-                  height={700} />
+                <div className="flex justify-center items-center">
+                  <div className="flex gap-4 items-center text-white text-sm">
+                    <button className="w-60 h-10 justify-center rounded-md bg-secondary hover:bg-white transition-all duration-500 ease-in hover:text-black flex gap-2 items-center relative z-20" onClick={openSignup}>
+                      <FaUserPlus size={15} />Sign Up Now, It's Free
+                    </button>
+                    <button className="w-52 h-10 justify-center rounded-md hover:bg-white/80 bg-white transition-all duration-500 ease-in text-black flex gap-1 items-center" onClick={openLogin}>
+                      <IoIosArrowRoundForward size={25} /> Learn More
+                    </button>
+
+                    {(isLoginOpen || isSignupOpen) && (
+                      <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                        <div className="bg-white w-full max-w-3xl p-6 rounded-lg shadow-lg flex relative">
+                          <button className="absolute top-2 right-2 text-gray-500 hover:text-black" onClick={closeModal}>
+                            ✕
+                          </button>
+
+                          <div className="w-full md:w-1/2 p-8">
+                            {isLoginOpen ? (
+                              <Login onSwitch={() => { setIsLoginOpen(false); setIsSignupOpen(true); }} onClose={closeModal} isOpen={openLogin} />
+                            ) : (
+                              <Signup onSwitch={() => { setIsSignupOpen(false); setIsLoginOpen(true); }} onClose={closeModal} isOpen={openSignup} />
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="flex justify-center items-center relative mt-32">
+                  <div className="relative w-[90%] max-w-[600px]">
+                    <Image
+                      src="/images/laptop-header.png"
+                      alt="Laptop"
+                      className="w-full h-auto"
+                      width={600}
+                      height={200}
+                    />
+                    <div className="absolute right-2 sm:right-10 top-2 sm:top-5 bounce-slow w-[30%] max-w-[180px]">
+                      <Image
+                        src="/images/mobile1.png"
+                        alt="Mobile"
+                        className="w-full h-auto"
+                        width={180}
+                        height={200}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="absolute left-0 top-40 bounce-slow-one lg:block hidden">
+                    <Image src="/images/a4.png" alt="" width={50} height={200} />
+                  </div>
+                  <div className="absolute right-[0px] top-28 bounce-slow-two lg:block hidden">
+                    <Image src="/images/a6.png" alt="" width={50} height={200} />
+                  </div>
+                </div>
               </div>
             </div>
+            <div className="absolute right-52 top-3/4 lg:block hidden">
+              <Image src="/images/sq.png" alt="" width={20} height={200} className="orbit" />
+            </div>
+            <div className="absolute left-80 top-1/2 half-circle-motion md:block hidden z-10">
+              <Image src="/images/circle.png" alt="" width={20} height={200} />
+            </div>
+            <div className="absolute left-40 top-1/3 bounce-slow z-10">
+              <Image src="/images/tri1.png" alt="" width={60} height={200} className="orbit grayscale" />
+            </div>
+            <div className="absolute right-40 top-1/3 lg:block hidden">
+              <Image src="/images/tri4.png" alt="" width={20} height={200} className="orbit" />
+            </div>
+            <div className="absolute right-1/2 top-1/2 translate-x-1/2 z-10 ">
+              <Image src="/images/tri1.png" alt="" width={60} height={200} className="orbit grayscale" />
+            </div>
+          </div>
+          <div className="w-full mt-[-1px]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              style={{ transform: 'rotate(180deg)' }}
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,
+       82.39-16.72,168.19-17.73,250.45-.39C823.78,31,
+       906.67,72,985.66,92.83c70.05,18.48,146.53,
+       26.09,214.34,3V0H0V27.35A600.21,600.21,
+       0,0,0,321.39,56.44Z"
+                fill="#ffffff"
+                stroke="#ffffff"
+                stroke-width="1"
+              />
+            </svg>
+
           </div>
         </div>
 
@@ -287,7 +391,6 @@ const homepage = () => {
           PanelTwoImage="/images/expertise/travel-app/panels/agent-panel.webp"
           PanelIconsOne={undefined} PanelIconsTwo={undefined} PanelIconsThree={undefined} types={"white-image"}
         />
-
 
         <Benefits
           title="Benefits Of School ERP Software"
@@ -330,12 +433,10 @@ const homepage = () => {
           </button>
         </div>
 
-
         <Plans
           title="VigoCamp ERP Pricing – Plans That Bring Growth"
           desc="Vigo offers flexible pricing tailored to your needs that allows school of all scales to enjoy their innovative services to reduce their workload."
           Plans={plans} />
-
 
         <Offer
           title={"What Do We Offer? Get Exact What Makes Your School Competitive"}

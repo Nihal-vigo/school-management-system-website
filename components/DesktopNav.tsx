@@ -186,7 +186,7 @@ export default function DesktopNav(props: any) {
                   ✕
                 </button>
 
-                <div className="w-full md:w-1/2 p-8">
+                <div className="w-full md:w-1/2 p-8 ">
                   {isLoginOpen ? (
                     <Login onSwitch={() => { setIsLoginOpen(false); setIsSignupOpen(true); }} onClose={closeModal} isOpen={openLogin} />
                   ) : (
