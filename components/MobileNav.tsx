@@ -145,7 +145,7 @@ export default function MobileNav() {
           <span
             onClick={() => toggleSlideover()}
             id="slideover-bg"
-            className="absolute inset-0 w-full h-full transition-all duration-500 ease-out bg-gray-900 "></span>
+            className="absolute inset-0 w-full h-full transition-all duration-100 ease-out  "></span>
           <div
             id="slideover"
             className="md:w-96 w-80 bg-[#092F5C]  h-[100dvh] absolute  right-0 duration-300 ease-out transition-all translate-x-full overflow-scroll">
