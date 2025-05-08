@@ -104,11 +104,13 @@ export default function MobileNav() {
   const openSignup = () => {
     setIsSignupOpen(true);
     setIsLoginOpen(false); // Ensure login modal is closed
+    toggleSlideover();
   };
 
   const openLogin = () => {
     setIsLoginOpen(true);
     setIsSignupOpen(false); // Ensure signup modal is closed
+    toggleSlideover();
   };
 
   const closeModal = () => {
@@ -376,7 +378,11 @@ export default function MobileNav() {
                 Login
               </button>
 
-              {(isLoginOpen || isSignupOpen) && (
+            
+            </div>
+          </div>
+        </div>
+        {(isLoginOpen || isSignupOpen) && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
                   <div className="bg-white w-full max-w-3xl p-6 rounded-lg shadow-lg flex relative">
                     <button className="absolute top-2 right-2 text-gray-500 hover:text-black" onClick={closeModal}>
@@ -393,9 +399,6 @@ export default function MobileNav() {
                   </div>
                 </div>
               )}
-            </div>
-          </div>
-        </div>
       </nav>
     </div>
   );
