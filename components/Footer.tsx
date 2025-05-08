@@ -222,7 +222,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="space-y-5 sm:w-1/2">
+          <div className="space-y-5">
             <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
 
             <div className="flex flex-col md:gap-2 gap-1">

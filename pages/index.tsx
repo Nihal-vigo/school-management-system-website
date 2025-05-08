@@ -264,7 +264,7 @@ const homepage = () => {
         <div className="max-width w-full bg-cover bg-gradient-to-r from-[#09327f] to-[#06183b] text-white  no-repeat md:pt-0 pt-32 relative">
           <div className="relative">
             <Header />
-            <div className="w-11/12 lg:w-1/2 mx-auto xl:pt-32 sm:pt-28 !text-center max-w-7xl  ">
+            <div className="w-11/12 xl:w-1/2 mx-auto xl:pt-32 md:pt-28 !text-center max-w-7xl  ">
               <div className="space-y-10 w-full py-5 ">
                 <h1 className="md:text-[60px] text-3xl font-bold md:leading-[3.5rem] capitalize font-inter  ">
                   School Management Software
@@ -274,7 +274,7 @@ const homepage = () => {
                 </p>
 
                 <div className="flex justify-center items-center">
-                  <div className="flex gap-4 items-center text-white text-sm">
+                  <div className="flex flex-wrap gap-4 items-center text-white text-sm justify-center">
                     <button className="w-60 h-10 justify-center rounded-md bg-secondary hover:bg-white transition-all duration-500 ease-in hover:text-black flex gap-2 items-center relative z-20" onClick={openSignup}>
                       <FaUserPlus size={15} />Sign Up Now, It's Free
                     </button>

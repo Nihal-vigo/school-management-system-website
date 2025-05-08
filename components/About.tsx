@@ -48,7 +48,11 @@ const About = ({ title, paraOne, paraTwo, paraThree, btnName, img, imgTitle }) =
                             </p>
                         </div>
                     </div>
-                    <Button btnName={btnName} url={"tel:+918209514612"} onClickFunc={undefined} clipShapeBgColor={"secondary"} bgColor={'bg-secondary'} bgColorOne={undefined} iconColor={undefined} />
+            
+                    <button className="w-28 h-9 justify-center rounded-md bg-primary text-white hover:bg-primary/80 transition-all duration-500 ease-in flex gap-2 items-center relative z-20" >
+                     Get Demo
+                    </button>
+                            {/* <Button btnName={btnName} url={"tel:+918209514612"} onClickFunc={undefined} clipShapeBgColor={"secondary"} bgColor={'bg-secondary'} bgColorOne={undefined} iconColor={undefined} /> */}
                 </div>
 
             </div>

@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { BsChevronUp } from "react-icons/bs";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 const TalktoModel = dynamic(() => import('../components/TalktoModel'), {
   ssr: false,
@@ -86,26 +87,24 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
           <div className="fixed whatsapp_icon_fix md:bottom-40 bottom-36 md:left-8 left-2 animate-pulse z-[999]">
             <Link passHref={true} href="tel:+918209514612" title="Call"
               target="_blank" >
-              <div className="bg-[#25d366] w-[50px] h-[50px] flex items-center justify-center rounded-full text-white pulse cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"><path fill="white" d="M391 480c-19.52 0-46.94-7.06-88-30c-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0 1 28.64-15.2c1-.43 1.93-.84 2.76-1.21c4.95-2.23 12.45-5.6 21.95-2c6.34 2.38 12 7.25 20.86 16c18.17 17.92 43 57.83 52.16 77.43c6.15 13.21 10.22 21.93 10.23 31.71c0 11.45-5.76 20.28-12.75 29.81c-1.31 1.79-2.61 3.5-3.87 5.16c-7.61 10-9.28 12.89-8.18 18.05c2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47c1.48-1.13 3-2.3 4.59-3.47c10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18c18 9.08 59.11 33.59 77.14 51.78c8.77 8.84 13.66 14.48 16.05 20.81c3.6 9.53.21 17-2 22c-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 0 1-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 0 1 391 480Z" /></svg>
+              <div className="bg-[#25d366] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white pulse cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path fill="white" d="M391 480c-19.52 0-46.94-7.06-88-30c-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0 1 28.64-15.2c1-.43 1.93-.84 2.76-1.21c4.95-2.23 12.45-5.6 21.95-2c6.34 2.38 12 7.25 20.86 16c18.17 17.92 43 57.83 52.16 77.43c6.15 13.21 10.22 21.93 10.23 31.71c0 11.45-5.76 20.28-12.75 29.81c-1.31 1.79-2.61 3.5-3.87 5.16c-7.61 10-9.28 12.89-8.18 18.05c2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47c1.48-1.13 3-2.3 4.59-3.47c10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18c18 9.08 59.11 33.59 77.14 51.78c8.77 8.84 13.66 14.48 16.05 20.81c3.6 9.53.21 17-2 22c-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 0 1-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 0 1 391 480Z" /></svg>
               </div>
             </Link>
           </div>
           <div className="fixed whatsapp_icon_fix  md:bottom-24 bottom-20 md:left-8 left-2 z-[999]">
-            <Link passHref={true} href="skype:live:.cid.422031ca71b9b254?chat" title="skype"
+            <Link passHref={true} href="skype:" title="skype"
               target="_blank" >
               <div className=" w-[52px] h-[55px] flex items-center justify-center rounded-full text-white pulse cursor-pointer animate-pulse">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 48 48">
-                  <path fill="#03a9f4" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path><circle cx="33.5" cy="33.5" r="11.5" fill="#03a9f4"></circle><circle cx="14.5" cy="14.5" r="11.5" fill="#03a9f4"></circle><path fill="#fff" d="M24.6,36C18,36,15,32.7,15,30.2c0-1.3,0.9-2.2,2.2-2.2c2.8,0,2.1,4.1,7.4,4.1c2.7,0,4.2-1.5,4.2-3	c0-0.9-0.4-1.9-2.2-2.4l-5.9-1.5c-4.7-1.2-5.6-3.8-5.6-6.3c0-5.1,4.7-6.9,9.1-6.9c4.1,0,8.8,2.2,8.8,5.2c0,1.3-1,2.1-2.3,2.1	c-2.4,0-2-3.4-6.8-3.4c-2.4,0-3.8,1.1-3.8,2.7c0,1.6,1.9,2.1,3.6,2.5l4.4,1c4.8,1.1,5.9,3.9,5.9,6.6C33.9,32.9,30.9,36,24.6,36z"></path>
-                </svg>
+               <Image src="/images/teams.webp" alt="" width={40} height={30}/>
               </div>
             </Link>
           </div>
           <div className="fixed whatsapp_icon_fix md:bottom-8 bottom-4 md:left-8 left-2 z-[999] animate-pulse">
             <Link passHref={true} href="https://api.whatsapp.com/send?phone=918209514612" title="Whatsapp"
               target="_blank" >
-              <div className="bg-[#25d366] w-[50px] h-[50px] flex items-center justify-center rounded-full text-white pulse cursor-pointer">
-                <svg focusable="false" viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+              <div className="bg-[#25d366] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white pulse cursor-pointer">
+                <svg focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                   <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>
                 </svg>
                 <i className="bi bi-whatsapp"></i>
@@ -113,9 +112,9 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
             </Link>
           </div>
           <div onClick={(top)} className="fixed bottom-32 right-8 z-[999]">
-            <div className="p-4 rounded-full relative inline-flex group items-center justify-center cursor-pointer bg-[#F55B14] overflow-hidden">
+            <div className="p-3 rounded-full relative inline-flex group items-center justify-center cursor-pointer bg-primary overflow-hidden">
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-white rounded-full group-hover:w-16 group-hover:h-16 opacity-10"></span>
-              <BsChevronUp className="text-white transition-all duration-200 ease-out" size={20} />
+              <BsChevronUp className="text-white transition-all duration-200 ease-out" size={15} />
             </div>
           </div>
         </div>
