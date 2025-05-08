@@ -239,24 +239,24 @@ const homepage = () => {
         <meta charSet="utf-8" />
         <meta name="language" content="en" />
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-        <title> Best Mobile App & Web Development Company - Vigorous IT  </title>
+        <title> Best School App & Web Development Company - Vigorous IT  </title>
         <meta name="description" content="Using the latest web frameworks, Vigorous IT offers web app development services that turn ideas into profitable business solutions." />
-        <link rel="canonical" href="https://www.vigorousit.com/" />
+        <link rel="canonical" href="https://" />
 
-        <meta property="og:url" content="https://www.vigorousit.com/" />
-        <meta property="og:title" content="Best Mobile App & Web Development Company - Vigorous IT" />
+        <meta property="og:url" content="https://" />
+        <meta property="og:title" content="Best School App & Web Development Company - Vigorous IT" />
         <meta property="og:site_name" content="Vigorous IT" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Using the latest web frameworks, Vigorous IT offers web app development services that turn ideas into profitable business solutions." />
-        <meta property="og:image" content="https://www.vigorousit.com/logo/vigo-camp-logo.webp" />
+        <meta property="og:image" content="https:/" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="vigorousit.com" />
         <meta name="twitter:site" content="“@vigorousit" />
-        <meta property="twitter:url" content="https://www.vigorousit.com/" />
-        <meta name="twitter:title" content="Best Mobile App & Web Development Company - Vigorous IT" />
+        <meta property="twitter:url" content="https://" />
+        <meta name="twitter:title" content="Best School App & Web Development Company - Vigorous IT" />
         <meta name="twitter:description" content="Using the latest web frameworks, Vigorous IT offers web app development services that turn ideas into profitable business solutions." />
-        <meta name="twitter:image" content="https://www.vigorousit.com/logo/vigo-camp-logo.webp" />
+        <meta name="twitter:image" content="https:/" />
 
       </Head>
 
