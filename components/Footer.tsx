@@ -54,7 +54,7 @@ const Footer = () => {
       <div className='w-full pt-40 pb-2 mx-auto lg:block hidden relative bg-secondary  mt-52'>
         <div className='absolute bg-primary text-white 2xl:w-3/4 w-11/12  lg:rounded-2xl rounded-t-none rounded-b-md -top-[20%] left-2/4 -translate-x-2/4 mx-auto'>
           <div className='flex w-full items-center '>
-            <div className="space-y-5 w-1/2  p-[25px]">
+            <div className="space-y-5 w-[40%]  p-[25px]">
               <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
 
               <div className="text-[16px] flex flex-col md:gap-2 gap-1">
@@ -93,7 +93,7 @@ const Footer = () => {
               </div>
 
             </div>
-            <div className='w-1/2 rounded-r-2xl overflow-hidden'>
+            <div className='w-[60%] rounded-r-2xl overflow-hidden'>
               <div className="wpb_raw_code wpb_content_element wpb_raw_html " >
                 <div className="wpb_wrapper">
                   <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.084485494637!2d-122.41941518468164!3d37.774929779759595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2e44a349%3A0x3c5e3e4f9ffabeed!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1614030258460!5m2!1sen!2sus" width="100%" height="270" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -153,7 +153,7 @@ const Footer = () => {
               </div>
             </div>
             <div className='flex-1'>
-              <Image src="/logo/vigo-camp-logo.webp" alt='' width={400} height={200} />
+              <Image src="/logo/vigo-camp-logo-white.svg" alt='' width={250} height={200} />
             </div>
           </div>
 
@@ -167,7 +167,7 @@ const Footer = () => {
 
       <div className='w-full pt-60 pb-4 mx-auto lg:hidden block relative bg-secondary sm:mt-60 mt-80 text-white'>
         <div className='absolute  lg:w-5/6 w-11/12  space-y-5 -top-[44%] left-2/4 -translate-x-2/4 mx-auto '>
-          <div className="flex justify-between p-3 gap-4 bg-primary rounded-2xl">
+          <div className="flex flex-wrap justify-between p-3 gap-4 bg-primary rounded-2xl">
             <div className="space-y-5  px-2">
               <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
 
@@ -189,7 +189,25 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-
+            <div>
+              <p className="text-lg font-bold ">Follow Us</p>
+              <ul className="flex gap-4 !p-0 list-none justify-start flex-wrap ">
+                {socialLinks.map(({ href, label, icon: Icon }, index) => (
+                  <li key={index}>
+                    <Link
+                      passHref={true}
+                      href={href}
+                      rel="noreferrer"
+                      aria-label={label}
+                      target="_blank"
+                      className="text-white/80 transition hover:text-white"
+                    >
+                      <Icon size={24} />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className="wpb_raw_code wpb_content_element wpb_raw_html rounded-2xl overflow-hidden" >
             <div className="wpb_wrapper">
@@ -224,7 +242,6 @@ const Footer = () => {
 
           <div className="space-y-5">
             <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
-
             <div className="flex flex-col md:gap-2 gap-1">
               {contactInfo.map(({ icon, href, label, target }, index) => (
                 <div key={index} className="text-white flex gap-3 w-full items-center">
@@ -242,9 +259,8 @@ const Footer = () => {
                 </div>
               ))}
             </div>
+
           </div>
-
-
         </div>
       </div>
     </>

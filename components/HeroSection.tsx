@@ -4,15 +4,15 @@ import Popup from "./Popup";
 
 const HeroSection = ({ title, titleOne, para, buttonCount, buttonNames, callToActionLine,para1 = "" }) => {
   return (
-    <div className="space-y-3 text-left  w-full py-5">
-      <h1 className="md:text-[42px] text-3xl font-bold md:leading-[3.5rem] capitalize font-inter text-primary ">
+    <div className="space-y-3 text-left  w-full py-5 text-white">
+      <h1 className="md:text-[42px] text-3xl font-bold md:leading-[3.5rem] capitalize font-inter text-white ">
         {title}
       </h1>
-      <p><span className="text-ternary/90 text-lg"> {titleOne}</span></p>
-      <p className="lg:text-md text-base font-medium text-ternary font-nunito lg:pr-16">
+      <p><span className="text-lg"> {titleOne}</span></p>
+      <p className="lg:text-md text-base font-medium  font-nunito lg:pr-16">
         {para}
       </p>
-       <p className="lg:text-md text-base font-medium text-ternary font-nunito lg:pr-16">
+       <p className="lg:text-md text-base font-medium  font-nunito lg:pr-16">
         {para1}
       </p>
       {callToActionLine &&

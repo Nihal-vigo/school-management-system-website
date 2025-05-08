@@ -1,0 +1,134 @@
+{
+    "estimation" : [
+        {
+            
+            "title": "App Type",
+            "img": "/images/expertise/e-commerce/factors/app-type.svg",
+            "decs": "With an unique UIN number, the RFID marks accurate attendance of the student/faculty. As the process is automatic, there is no chance of human error. With real-time attendance, the faculty can track the student activities effectively. Also, there is no chance of proxy as everyone has a unique ID, making the process 100% accurate."
+    
+        },
+        {
+            
+            "title": "Platform Choice",
+            "img": "/images/expertise/fantasy-sports-app/cost-estimation/platform.svg",
+            "decs": "Unlike the traditional roll calling, RFID attendance takes barely a few seconds for marking the attendance just by displaying the RFID card near the reader. Also, the faculty can identify, verify, and authorize student attendance within seconds from the database. There is no need to maintain manual records as the process is completely automated."
+    
+        },
+        {
+            
+            "title": "UI/UX Design",
+            "img": "/images/expertise/car-rental/factor/design.svg",
+            "decs": "The RFID attendance is linked with the Student Information System which automatically sends SMS alerts regarding the student attendance to faculty & teachers. It notifies the student’s chronic absenteeism. Also, it tracks the entry & exit time of each student in the classroom. It further notifies if the student or staff enters into restricted areas of the campus."
+    
+        },
+        {
+            
+            "title": "Third-Party Integrations",
+            "img": "/images/expertise/e-commerce/factors/third-party-integrations.svg",
+            "decs": "The system generates daily attendance register reports, daily attendance reports, and monthly/yearly attendance calculation reports to the administration and management staff. This helps in keeping a detailed track of a student's presence in each lecture. Also, it offers error-free AI-powered dashboards with graphical outputs which further simplifies managing student attendance."
+    
+        },
+        {
+            
+            "title": "Security And Compliance",
+            "img": "/images/expertise/e-commerce/factors/security-compliance.svg",
+            "decs": "An automated RFID attendance system considerably reduces paperwork of marking student’s attendance, thereby boosts efficiency & productivity. It saves time, efforts, and resources to manage student attendance & records. No roll calls are required thus saving the teacher additional effort of manually taking attendance for each lecture. With this process, more time is dedicated for teaching in the classroom."
+    
+        },
+        {
+            
+            "title": "Advanced Technologies",
+            "img": "/images/expertise/car-rental/factor/support-maintenance.svg",
+            "decs": "As RFID is installed almost everywhere in the campus, the student is tracked everywhere, including classrooms, library, hostel, labs, canteen, gym, mess, etc. If they are entering a restricted area without permission, their activity is monitored and a warning can be issued to them for breaking the rules. If a student leaves the campus early, both parents and teachers are informed immediately."
+    
+        }
+    ],
+    "usedFor": [
+        {
+            "title": "Course Management",
+            "decs": "Easily create, share, and manage courses for your learning goals, be it classroom or corporate training."
+        },
+        {
+            "title": "Assessments And Grades",
+            "decs": "Conduct online exams, quizzes, and assignments with auto-grade features and instant results."
+        },
+        {
+            "title": "Track Student Progress",
+            "decs": "Get real-time insights on how your students are doing. Know where they excel and where they need a little extra help."
+        },
+        {
+            "title": "Collaborate Effortlessly",
+            "decs": "Enable seamless communication among educators and students through chats, discussions, and group projects – all in one place."
+        },
+        {
+            "title": "Share Resources Easily",
+            "decs": "Store and share eBooks, research papers, videos, and other learning material so everything's at your fingertips."
+        }
+    ],
+    "needFor": [
+        {
+            "title": "Course Management",
+            "decs": "Easily create, share, and manage courses for your learning goals, be it classroom or corporate training."
+        },
+        {
+            "title": "Assessments And Grades",
+            "decs": "Conduct online exams, quizzes, and assignments with auto-grade features and instant results."
+        },
+        {
+            "title": "Track Student Progress",
+            "decs": "Get real-time insights on how your students are doing. Know where they excel and where they need a little extra help."
+        },
+        {
+            "title": "Collaborate Effortlessly",
+            "decs": "Enable seamless communication among educators and students through chats, discussions, and group projects – all in one place."
+        },
+        {
+            "title": "Share Resources Easily",
+            "decs": "Store and share eBooks, research papers, videos, and other learning material so everything's at your fingertips."
+        }
+    ],
+    "faqDataOne": [
+        {
+            "title": "How long does it take to develop an astrology app?",
+            "desc": "The development time depends on the complexity of the app and the features required. Generally, it takes between 2 to 6 months to develop a fully functional astrology app."
+        },
+        {
+            "title": "Can I launch my astrology app on both Android and iOS?",
+            "desc": "Yes, we can develop your app for both Android and iOS platforms, ensuring a wider reach."
+        },
+        {
+            "title": "Will my app require regular updates?",
+            "desc": "Yes, we offer ongoing maintenance and updates to ensure your app stays up to date with the latest features and bug fixes."
+        },
+        {
+            "title": " How much does astrology app development cost?",
+            "desc": "The cost varies depending on the features, complexity, and platform. Our team will provide a detailed estimate after understanding your requirements."
+        },
+        {
+            "title": "Do you offer support after the app launch?",
+            "desc": "Yes, we provide post-launch support to address any issues and keep your app running smoothly."
+        }
+    ],
+    "faqDataTwo": [
+        {
+            "title": "How long does it take to develop an astrology app?",
+            "desc": "The development time depends on the complexity of the app and the features required. Generally, it takes between 2 to 6 months to develop a fully functional astrology app."
+        },
+        {
+            "title": "Can I launch my astrology app on both Android and iOS?",
+            "desc": "Yes, we can develop your app for both Android and iOS platforms, ensuring a wider reach."
+        },
+        {
+            "title": "Will my app require regular updates?",
+            "desc": "Yes, we offer ongoing maintenance and updates to ensure your app stays up to date with the latest features and bug fixes."
+        },
+        {
+            "title": " How much does astrology app development cost?",
+            "desc": "The cost varies depending on the features, complexity, and platform. Our team will provide a detailed estimate after understanding your requirements."
+        },
+        {
+            "title": "Do you offer support after the app launch?",
+            "desc": "Yes, we provide post-launch support to address any issues and keep your app running smoothly."
+        }
+    ]
+}

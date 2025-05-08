@@ -2,33 +2,35 @@ import React from 'react'
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 
-const GridSection = ({ values, title, para, type, types }) => {
+const WhyNeed = ({ values, title, para }) => {
     return (
 
-        <section className='md:space-y-10 space-y-5' >
+        <section className='py-10 text-white space-y-10' >
             {title && (
                 <div className="space-y-4  flex flex-col justify-center items-center">
-                    <h2 className="text-primary text-center lg:text-3xl text-2xl font-bold font-inter">
+                    <h2 className=" text-center lg:text-3xl text-2xl font-bold font-inter">
                         {title}
                     </h2>
+
                     <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className='' />
                     {para && (
-                        <p className="lg:text-md text-base text-ternary text-center">
+                        <p className="lg:text-md text-base text-center">
                             {para}
                         </p>
                     )}
                 </div>
             )}
 
-            <div className={`grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-9 gap-2 `}>
+            <div className={`grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-9 gap-2`}>
                 {values.map((elem: any, index: any) => {
                     const { title, decs } = elem;
                     return (
-                        <div key={index} className='space-y-2 mx-auto text-center flex flex-col justify-start items-center text-ternary border xl:h-60 lg:h-64 sm:h-48 sm:p-1 p-3 md:border-t-8 md:border-b-8 border-b-2 border-t-2 rounded-2xl border-primary'>
-                            <h3 className="text-md font-bold ">{title}</h3>
+                        <div key={index} className={` rounded-lg flex flex-col justify-start items-start leading-9 tracking-wide bg-white xl:h-40 md:h-44 p-4 gap-2 px-3`} >
+                            <h3 className="text-md  text-ternary font-bold text-center ">{title}</h3>
                             <p className='w-1/4 h-[1px] bg-black'></p>
-                            <p className="text-base  ">{decs}</p>
+                            <p className="text-base text-ternary ">{decs}</p>
                         </div>
+
                     );
                 })}
             </div>
@@ -38,4 +40,4 @@ const GridSection = ({ values, title, para, type, types }) => {
     )
 }
 
-export default GridSection
+export default WhyNeed

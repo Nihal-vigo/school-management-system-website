@@ -373,9 +373,7 @@ const homepage = () => {
           paraOne="We take charge of enhancing the school’s efficiency and letting them manage all school operations with an all-in-one powerful platform. VigoCamp software is specifically helpful in offering a digitally connected school ecosystem, which makes it a perfect software that has the power to fulfil the needs of modern-day educational institutions. It makes the communication process easier with integrations like WhatsApp/SMS APIs, while further integrations play an important role in offering a paperless and centralized administrative system."
           paraTwo=""
           paraThree="" btnName={undefined}
-          img="/images/expertise/travel-app/about-img.webp"
-          imgTitle={""}
-        />
+          img="/images/expertise/travel-app/about-img.webp" type={undefined}        />
 
         <Panels
           title="VigoCamp Management Software Panel Features"
