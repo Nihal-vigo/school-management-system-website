@@ -22,7 +22,7 @@ const BenefitsPages: React.FC<BenefitsPagesProps> = ({
   onButtonClick
 }) => {
   return (
-    <section className="mx-auto py-10 xl:w-2/3 w-11/12 max-w-7xl font-nunito lg:flex gap-5 items-center">
+    <section className="mx-auto py-10 2xl:w-2/3 w-11/12 max-w-7xl font-nunito lg:flex gap-5 items-center">
       <div className="lg:w-1/2">
         <div className="space-y-7 lg:text-md text-base">
           <h2 className="font-semibold lg:text-4xl text-3xl text-primary font-inter">{heading}</h2>
