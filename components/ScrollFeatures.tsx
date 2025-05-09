@@ -64,9 +64,9 @@ const ScrollFeatures = () => {
 
     return (
         <div className='bg-primary relative my-10'>
-            <div className="md:flex block lg:w-5/6 w-11/12 mx-auto md:min-h-[10dvh]">
+            <div className="lg:flex block lg:w-5/6 w-11/12 mx-auto min-h-[100dvh]">
                 {/* Sidebar */}
-                <div className="md:w-1/2 w-full lg:p-10 sticky top-0 h-screen flex flex-col justify-center ">
+                <div className="lg:w-1/2 w-full lg:p-10 sticky top-0 h-screen flex flex-col justify-center ">
                     <h2 className="text-white md:text-3xl text-2xl font-bold mb-4">Features</h2>
                     <p className="text-gray-300 mb-8 text-sm">
                         Discover the power of our tools, tailored to help you optimize performance and productivity.
@@ -103,9 +103,8 @@ const ScrollFeatures = () => {
                 </div>
 
 
-
                 {/* Features on right */}
-                <div className="md:w-1/2 w-full">
+                <div className="w-1/2 ">
                     {features.map((feature, index) => (
                         <section
                             key={feature.id}
@@ -115,7 +114,7 @@ const ScrollFeatures = () => {
                             <img
                                 src={feature.image}
                                 alt={feature.title}
-                                className="rounded-lg shadow-xl w-4/5 max-w-md"
+                                className="rounded-lg shadow-xl w-4/5 max-w-md lg:block hidden"
                             />
                         </section>
                     ))}
@@ -127,3 +126,4 @@ const ScrollFeatures = () => {
 };
 
 export default ScrollFeatures;
+
