@@ -51,8 +51,8 @@ const contactInfo = [
 const Footer = () => {
   return (
     <>
-      <div className='w-full pt-40 pb-2 mx-auto lg:block hidden relative bg-secondary  mt-52'>
-        <div className='absolute bg-primary text-white 2xl:w-3/4 w-11/12  lg:rounded-2xl rounded-t-none rounded-b-md -top-[20%] left-2/4 -translate-x-2/4 mx-auto'>
+      <div className='w-full pt-40 pb-2 mx-auto lg:block hidden relative bg-primary  mt-52'>
+        <div className='absolute bg-black text-white 2xl:w-3/4 w-11/12  lg:rounded-2xl rounded-t-none rounded-b-md -top-[20%] left-2/4 -translate-x-2/4 mx-auto'>
           <div className='flex w-full items-center '>
             <div className="space-y-5 w-[40%]  p-[25px]">
               <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
@@ -165,9 +165,9 @@ const Footer = () => {
 
       {/* Mobile view */}
 
-      <div className='w-full pt-60 pb-4 mx-auto lg:hidden block relative bg-secondary sm:mt-60 mt-80 text-white'>
+      <div className='w-full pt-60 pb-4 mx-auto lg:hidden block relative bg-primary sm:mt-60 mt-80 text-white'>
         <div className='absolute  lg:w-5/6 w-11/12  space-y-5 -top-[44%] left-2/4 -translate-x-2/4 mx-auto '>
-          <div className="flex flex-wrap justify-between p-3 gap-4 bg-primary rounded-2xl">
+          <div className="flex flex-wrap justify-between p-3 gap-4 bg-black rounded-2xl">
             <div className="space-y-5  px-2">
               <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
 

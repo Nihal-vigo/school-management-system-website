@@ -13,19 +13,19 @@ module.exports = {
         'lg': '19px',
       },
       textColor: {
-        'primary': '#1e3a8a',//darkblue
-        'secondary': '#3b82f6',//lightblue
+        'primary': '#112E57',//darkblue
+        'secondary': '#FB601C',//lightblue
         'ternary': 'black',
       },
       backgroundColor: {
-        'primary': '#1e3a8a',//darkblue
-        'secondary': '#3b82f6',//lightblue
+        'primary': '#112E57',//darkblue
+        'secondary': '#FB601C',//lightblue
         'gradient-white': 'rgba(255, 255, 255, 0.8)',
         'gradient-black': 'rgba(0, 0, 0, 0.6)',
       },
       borderColor: {
-        'primary': '#1e3a8a', //darkblue
-        'secondary' : '#3b82f6',//lightblue
+        'primary': '#112E57', //darkblue
+        'secondary' : '#FB601C',//lightblue
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
@@ -59,7 +59,7 @@ module.exports = {
       const newUtilities = {
         '.clip-custom-shape': {
           'clip-path': 'polygon(25% 0%, 100% 0%, 100% 100%, 57% 100%)',
-          'background-color': '#3b82f6'
+          'background-color': '#FB601C'
         },
         '.text-stroke-white': {
           '-webkit-text-stroke': '2px #092d581f', // Outline thickness and color

@@ -45,17 +45,15 @@ export const company = [
 ];
 
 export const services = [
-  { name: "Mobile App Development", href: "/services/mobile-app-development" },
-  { name: "Android App Development", href: "/services/android-app-development" },
-  { name: "Website Development", href: "/services/website-development" },
-  { name: "iOS App Development", href: "/services/ios-app-development" },
-  { name: "Custom App Development", href: "/services/custom-app-development" },
-  { name: "UI / UX Design", href: "/services/ui-ux-design" },
-  { name: "Quality Assurance", href: "/services/quality-assurance" },
-  { name: "Digital Marketing", href: "/services/digital-marketing" },
-  { name: "RPO Services", href: "/services/recruitment-process-outsourcing" },
-  { name: "Blockchain Development", href: "/" },
-  { name: "Cryptocurrency Development", href: "/" },
+  { name: "Attendance Management", href: "/attendance-system" },
+  { name: "Hostel Management", href: "/"},
+  { name: "Fee Management", href: "/"},
+  { name: "Library Management", href: "/"},
+  { name: "Transport Management", href: "/"},
+  { name: "Inventory Management", href: "/"},
+  { name: "E-Learning", href: "/"},
+  { name: "Online Admission", href: "/"},
+  { name: "School Bus Tracking", href: "/"},
 ];
 
 export default function DesktopNav(props: any) {
@@ -121,7 +119,7 @@ export default function DesktopNav(props: any) {
     <div className="w-full headered fixed ">
       <nav className=" flex items-center justify-between  mx-auto  2xl:w-4/5 md:w-11/12 h-16 ">
         <Link passHref={true} href="/" className="relative flex items-center flex-shrink-0 text-white">
-          <Image src="/logo/vigo-camp-logo.webp"
+          <Image src="/logo/vigo-camp-logo.svg"
             alt="Vigorous IT Solutions logo"
             title="Vigorous IT Solutions logo"
             width={180}
@@ -150,7 +148,7 @@ export default function DesktopNav(props: any) {
                       ? "font-bold text-white/90"
                       : "font-bold flex items-center"
                   }>
-                  Services <IoMdArrowDropdown/>
+                  Special Features <IoMdArrowDropdown/>
                 </span>
               </button>
               <div className="z-40 mt-[13px] pt-5 bg-white rounded-b-2xl  text-black capitalize lg:absolute top-[3rem] lg:drop-shadow-xl relative 2xl:-right-[12rem] xl:-right-[6.2rem] right-[6.1rem] transform translate-x-[50%] hidden group-hover:block transition duration-200 ease-in-out origin-top 2xl:w-[90rem] xl:w-[76rem] lg:w-[63rem] w-[40rem] xl:py-10 py-6 mx-auto space-y-8 xl:whitespace-nowrap whitespace-normal">

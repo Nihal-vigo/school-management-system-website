@@ -1,102 +1,74 @@
-import React, { use, useState } from 'react';
-import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+import React from "react";
 
-const WhyChooseSection = ({ WhyChoose, title, para, type, benefits }) => {
-    const [currentCount, setCurrentCount] = useState(0);
-    return (
-        <section>
-            <div className="pb-5 xl:py-5 lg:py-14 py-20 px-2">
-                <div className="font-nunito text-ternary items-center mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12 max-w-7xl lg:flex justify-between lg:space-x-24 space-x-0 lg:space-y-0 space-y-10">
-                    <div className="lg:w-[40%] w-full space-y-4 text-left">
-                        <h2 className="lg:text-3xl text-2xl text-left font-bold text-primary xl:leading-[2.2rem]">
-                            {title}
-                        </h2>
-                        <p className="md:text-md text-base lg:text-left text-justify">
-                            {para}
-                        </p>
-                    </div>
-                    {type === 1 ?
-                        (
-                            <div className="md:space-y-2 space-y-4 xl:w-3/4 lg:w-2/3 w-full">
-                                <div className="w-full py-4 space-y-4 overflow-y-auto  h-[400px] ">
-                                    {benefits.map((elem, index) => {
-                                        const { title, decs } = elem;
-                                        const isOpen = currentCount === index;
+const features = [
+  {
+    title: "Expert Instructors",
+    description:
+      "Learn from top industry professionals with real-world experience to help you master essential tools and techniques.",
+    icon: "👨‍🏫",
+  },
+  {
+    title: "Career-Boost Certify",
+    description:
+      "Get certified and open doors to new job opportunities with recognized credentials in the tech industry.",
+    icon: "🎓",
+  },
+  {
+    title: "Flexible Learning Schedules",
+    description:
+      "Learn at your own pace with on-demand courses that fit your busy schedule. Whether you're working or studying, you can access expert.io content anytime, anywhere.",
+    icon: "📅",
+    highlight: true, // Will span 2 rows on large screens
+  },
+  {
+    title: "100+ High Impact Courses",
+    description:
+      "Access over 100 carefully curated courses covering development, data science, cybersecurity, and more — taught by professionals, with hands-on projects to boost your skills immediately.",
+    icon: "📚",
+  },
+];
 
-                                        return (
-                                            <div
-                                                key={index}
-                                                className="bg-white cursor-pointer w-full border-b-2 border-black/10"
-                                                onClick={() => setCurrentCount(isOpen ? -1 : index)} // Toggle open/close
-                                            >
-                                                <div
-                                                    className={
-                                                        isOpen
-                                                            ? "flex items-start justify-between w-full px-2 py-4 text-base font-medium text-left md:items-center md:px-6 border-b-2 border-black/10 md:text-md bg-white text-primary"
-                                                            : "flex items-start justify-between w-full px-2 py-4 text-base font-medium text-left md:items-center md:px-6 text-ternary md:text-md"
-                                                    }
-                                                >
-                                                    <div className="flex items-center">
+const WhyChooseSection = () => {
+  return (
+    <section className="py-16 px-4 max-w-7xl mx-auto font-nunito space-y-10">
+      <h2 className="text-3xl font-bold text-primary">
+        Why Choose MasterSoft’s Learning Management Software (LMS)?
+      </h2>
 
-                                                        <p className="w-full md:text-md text-base font-semibold leading-8">{title}</p>
-                                                    </div>
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        className={`icon icon-tabler icon-tabler-chevron-${isOpen ? "up" : "down"} transition-all duration-200`}
-                                                        width="24"
-                                                        height="24"
-                                                        viewBox="0 0 24 24"
-                                                        strokeWidth="1.5"
-                                                        stroke="#2c3e50"
-                                                        fill="none"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                    >
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                        <polyline points="6 9 12 15 18 9" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    className={
-                                                        isOpen
-                                                            ? "py-6 md:px-6 text-ternary space-y-3 md:text-md text-base transition-height duration-200 "
-                                                            : "pt-0 px-6 text-ternary space-y-3 md:text-md text-base transition-height duration-200 min-h-0 h-0 overflow-hidden"
-                                                    }
-                                                >
-                                                    <p className="md:text-md text-base text-ternary">{decs}</p>
-                                                </div>
-                                            </div>
-                                        );
-                                    })}
-                                </div>
-                            </div>
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+        {features.map((feature, index) => {
+          const isHighlight = feature.highlight;
+          const isLast = feature.title === "100+ High Impact Courses";
 
-                        ) :
-                        (
-                            <div className="lg:w-[60%] lg:h-[480px] w-full space-y-10 mx-auto overflow-y-auto slidenone ">
-                                {WhyChoose &&
-                                    WhyChoose.map((elem,index) => {
-                                        const { title, img, decs } = elem;
-                                        return (
-                                            <div key={index} className="space-y-3 image-wrapper">
-                                                <div className='flex items-center gap-3 '>
-                                                    <Image src={img} alt={title} title={title} width={40} height={60} loader={uploadcareLoader} unoptimized={true} />
-                                                    <h3 className="text-md text-left font-bold">
-                                                        {title}
-                                                    </h3>
-                                                </div>
-                                                <p className="text-base lg:text-left line-clamp-3">{decs}</p>
-                                            </div>
-                                        );
-                                    })
-                                }
-                            </div>
-                        )}
-                </div>
+          return (
+            <div
+              key={index}
+              className={`bg-white border rounded-xl p-6 shadow-sm text-gray-800 ${
+                isHighlight ? "lg:row-span-2" : ""
+              } ${
+                isLast
+                  ? "lg:col-span-2 lg:block hidden" // visible only on lg
+                  : ""
+              }`}
+            >
+              <div className="text-3xl mb-4">{feature.icon}</div>
+              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <p className="text-sm">{feature.description}</p>
             </div>
-        </section>
-    );
-}
+          );
+        })}
+
+        {/* Mobile-only version of the last card */}
+        <div className="bg-white border rounded-xl p-6 shadow-sm text-gray-800 lg:hidden">
+          <div className="text-3xl mb-4">📚</div>
+          <h3 className="text-xl font-semibold mb-2">100+ High Impact Courses</h3>
+          <p className="text-sm">
+            Access over 100 carefully curated courses covering development, data science, cybersecurity, and more — taught by professionals, with hands-on projects to boost your skills immediately.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default WhyChooseSection;

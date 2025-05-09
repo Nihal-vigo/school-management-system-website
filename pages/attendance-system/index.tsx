@@ -5,12 +5,14 @@ import HeroSection from '../../components/HeroSection'
 import Image from 'next/image'
 import About from '../../components/About'
 import PageData from "./data.json"
-import Estimation from '../../components/Estimation'
 import GridSection from '../../components/GridSection'
 import WhyNeed from '../../components/WhyNeed'
 import FaqSection from '../../components/FaqSection '
+import ScrollFeatures from '../../components/ScrollFeatures'
+import WhyChooseSection from '../../components/WhyChooseSection'
+import BenefitsPages from '../../components/BenefitsPages'
 
-const { estimation, usedFor, needFor,faqDataOne,faqDataTwo } = PageData;
+const { estimation, usedFor, needFor, faqDataOne, faqDataTwo, innerBenefits } = PageData;
 const attendanceSystem = () => {
     return (
         <>
@@ -40,7 +42,7 @@ const attendanceSystem = () => {
 
             </Head>
 
-            <section className="overflow-hidden">
+            <section className="">
                 <div className="max-width w-full bg-primary">
                     <Header />
                     <div className=" lg:flex justify-between items-center space-x-5  w-11/12  mx-auto 2xl:pt-[8rem] 2xl:pb-[8rem] pt-[10rem] pb-[3rem] md:space-y-0 space-y-10 max-w-7xl">
@@ -69,30 +71,53 @@ const attendanceSystem = () => {
                     btnName="Request Demo"
                     img="/images/Student-Attendance-System.webp" type={1} />
 
-
-                <Estimation title="Features Of RFID-Attendance System" desc="The RFID attendance comes with advanced features which helps in capturing, monitoring, and managing accurate attendance of students, faculty, and non-teaching staff, thus simplifying the overall attendance process." Estimation={estimation} />
-
-
                 <div className=" mx-auto  w-11/12 max-w-7xl font-nunito">
                     <GridSection
                         values={usedFor}
                         title="What Are Learning Management Systems Used For?"
                         para="Learning Management Systems are your institution's digital command centre, in other words, making learning and administrative tasks easier as well as more effective. They are dynamic platforms whose designs are meant to revamp educational and training experiences while bringing a simplification of administrative workflows."
                         type={1} types={undefined} />
-
                 </div>
 
-                <div className='bg-primary my-10'>
-                    <div className=" mx-auto  w-11/12 max-w-7xl font-nunito">
+                <ScrollFeatures />
+                <WhyChooseSection />
+                <div className='bg-primary my-10 relative'>
+                    <div className=" mx-auto  w-11/12 max-w-7xl font-nunito ">
+             
                         <WhyNeed
                             values={needFor}
                             title="Why Does Your Institution Need LMS Software?"
                             para="Let's face it - conformity to traditional methods won't work anymore. Here's why your institution needs LMS software:"
                         />
+
                     </div>
+                    <div className="absolute left-10 bottom-[10%] lg:block hidden circle-motion">
+                            <Image src="/images/tri1.png" alt="" width={50} height={200} className="orbit " />
+                        </div>
+
+                        <div className="absolute left-10 bottom-[60%] lg:block hidden">
+                            <Image src="/images/sq.png" alt="" width={20} height={200} className="orbit " />
+                        </div>
+
+                        <div className="absolute right-10 bottom-[60%] lg:block hidden half-circle-motion">
+                            <Image src="/images/tri1.png" alt="" width={50} height={200} className="orbit " />
+                        </div>
+
+                        <div className="absolute right-10 bottom-[20%] lg:block hidden ">
+                            <Image src="/images/tri4.png" alt="" width={20} height={200} className="orbit" />
+                        </div>
                 </div>
 
-                <FaqSection faqDataOne={faqDataOne} faqDataTwo={faqDataTwo}/>
+                <BenefitsPages
+                    heading="We Are A Leading App Development Company"
+                    description="At Vigorous, we know the trends and what technologies your app must have to crush the competition..."
+                    buttonText="Get Demo"
+                    onButtonClick={() => console.log('Demo clicked')}
+                    benefits={innerBenefits}
+                />
+
+
+                <FaqSection faqDataOne={faqDataOne} faqDataTwo={faqDataTwo} />
 
             </section>
         </>

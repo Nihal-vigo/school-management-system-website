@@ -37,7 +37,7 @@ const Roles = () => {
     <div className="min-h-screen bg-gray-50 flex items-center justify-center md:p-4 p-1">
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 lg:gap-10 bg-white shadow-md rounded-lg overflow-hidden">
         <div className="bg-blue-50 md:p-6">
-          <img src="/logo/vigo-camp-logo.webp" alt="Vigo Logo" className="mb-4 h-10" />
+          <img src="/logo/vigo-camp-logo.svg" alt="Vigo Logo" className="mb-4 h-10" />
           <h2 className="text-lg font-semibold mb-4 lg:text-left text-center">
             Why To Choose Vigo Camp - School ERP Software
           </h2>

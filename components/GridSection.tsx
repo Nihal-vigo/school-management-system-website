@@ -25,7 +25,7 @@ const GridSection = ({ values, title, para, type, types }) => {
                     const { title, decs } = elem;
                     return (
                         <div key={index} className='space-y-2 mx-auto text-center flex flex-col justify-start items-center text-ternary border xl:h-60 lg:h-64 sm:h-48 sm:p-1 p-3 md:border-t-8 md:border-b-8 border-b-2 border-t-2 rounded-2xl border-primary'>
-                            <h3 className="text-md font-bold ">{title}</h3>
+                            <h3 className="text-md font-bold pt-2">{title}</h3>
                             <p className='w-1/4 h-[1px] bg-black'></p>
                             <p className="text-base  ">{decs}</p>
                         </div>

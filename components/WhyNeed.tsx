@@ -6,6 +6,7 @@ const WhyNeed = ({ values, title, para }) => {
     return (
 
         <section className='py-10 text-white space-y-10' >
+            
             {title && (
                 <div className="space-y-4  flex flex-col justify-center items-center">
                     <h2 className=" text-center lg:text-3xl text-2xl font-bold font-inter">

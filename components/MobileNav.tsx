@@ -124,7 +124,7 @@ export default function MobileNav() {
         <div className="flex items-center flex-shrink-0 text-primary ">
           <Link passHref={true} href="/" className="relative">
             <Image
-              src='/logo/vigo-camp-logo.webp'
+              src='/logo/vigo-camp-logo.svg'
               alt="Vigorous IT logo"
               title="Vigorous IT logo"
               width="120"
