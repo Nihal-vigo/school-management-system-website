@@ -6,7 +6,7 @@ import { uploadcareLoader } from '@uploadcare/nextjs-loader'
 const About = ({ title, paraOne, paraTwo, paraThree, btnName, img, type }) => {
     return (
         <section className={`${type === 1 ? "space-y-4 py-16" : ""}`}>
-            {type === 1 ? (<div className='text-center flex flex-col justify-center items-center gap-5'><h2 className="font-semibold lg:text-4xl sm:text-3xl text-2xl text-primary font-inter  ">
+            {type === 1 ? (<div className='text-center flex flex-col justify-center items-center gap-5'><h2 className="font-semibold sm:text-3xl text-2xl text-primary font-inter  ">
                 {title}
             </h2><Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className='' /></div>) : null}
 
@@ -26,7 +26,7 @@ const About = ({ title, paraOne, paraTwo, paraThree, btnName, img, type }) => {
                 <div className='lg:w-1/2 space-y-5 '>
                     <div className="lg:text-md text-base text-ternary">
                         <div className='space-y-7'>
-                            {type === 1 ? null : <h2 className="font-semibold lg:text-4xl sm:text-3xl text-2xl text-primary font-inter text-center lg:text-left">
+                            {type === 1 ? null : <h2 className="font-semibold  sm:text-3xl text-2xl text-primary font-inter text-center lg:text-left">
                                 {title}
                             </h2>}
                             <div className="lg:hidden flex justify-center">

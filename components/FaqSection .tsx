@@ -15,7 +15,7 @@ export default function FaqSection({ faqDataOne, faqDataTwo }) {
     <section className="bg-[url('/images/faq-bg.jpg')] bg-cover">
       <div className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12 max-w-7xl lg:px-0 md:px-6 px-0 py-10">
         <div className="space-y-4 w-full">
-          <h3 className="font-bold lg:text-4xl sm:text-3xl text-2xl  text-white text-center 2xl:leading-[3.5rem] xl:leading-[2.5rem] leading-[2rem] capitalize">
+          <h3 className="font-bold sm:text-3xl text-2xl  text-white text-center 2xl:leading-[3.5rem] xl:leading-[2.5rem] leading-[2rem] capitalize">
             Frequently Asked Questions
           </h3>
           <div className='flex justify-center items-center'>

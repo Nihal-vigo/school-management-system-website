@@ -125,7 +125,7 @@ const Panels = ({
     <section className="md:py-10 py-5" id="panel">
       <div className="mx-auto w-full font-nunito">
         <div className="flex flex-col items-center justify-center space-y-2 text-center">
-          <h2 className="lg:text-4xl sm:text-3xl text-2xl font-semibold text-primary xl:leading-[2.5rem] font-inter">
+          <h2 className="sm:text-3xl text-2xl font-semibold text-primary xl:leading-[2.5rem] font-inter">
             {title}
           </h2>
           <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className=''/>

@@ -71,7 +71,7 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
         <TalktoModel />
 
         <Footer />
-        <div className="text-sm font-semibold  border-t border-gray-400 py-4 flex justify-center bg-primary  ">
+        <div className="text-sm font-semibold  border-t border-gray-400 py-4 flex justify-center bg-primary font-nunito  ">
           {/* <div className="md:flex block justify-between 2xl:w-2/3 xl:w-4/5 sm:px-0 px-2 md:gap-8 md:space-y-0 space-y-5 items-start font-nunito text-sm mx-auto"> */}
             {/* <ul className="flex gap-2 md:w-1/2 w-11/12 flex-wrap md:text-left xl:justify-start justify-center text-white/80">
               <li className="hover:text-white "><Link href="/privacy-policy">Privacy Policy &nbsp;&nbsp; |</Link></li>

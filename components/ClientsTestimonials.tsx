@@ -50,7 +50,7 @@ const ClientTestimonial = () => {
     <section className='w-full '>
       <div className="xl:w-2/3 lg:w-3/4  w-11/12 mx-auto md:py-16 py-10 text-black">
         <p className="text-base font-normal text-black text-center pb-5">Trusted by Clients</p>
-        <p className="lg:text-4xl sm:text-3xl text-2xl  font-normal text-primary text-center pb-5">What Our Users Say About VigoCamp ERP?</p>
+        <p className=" sm:text-3xl text-2xl  font-normal text-primary text-center pb-5">What Our Users Say About VigoCamp ERP?</p>
         <div className='flex justify-center items-center'>
       <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className=''/>
       </div>
