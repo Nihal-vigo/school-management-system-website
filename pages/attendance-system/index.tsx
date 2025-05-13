@@ -11,8 +11,9 @@ import FaqSection from '../../components/FaqSection '
 import ScrollFeatures from '../../components/ScrollFeatures'
 import WhyChooseSection from '../../components/WhyChooseSection'
 import BenefitsPages from '../../components/BenefitsPages'
+import RummySection from '../../components/RummySection'
 
-const { estimation, usedFor, needFor, faqDataOne, faqDataTwo, innerBenefits } = PageData;
+const { estimation, usedFor, needFor, faqDataOne, faqDataTwo, innerBenefits,rummySection } = PageData;
 const attendanceSystem = () => {
     return (
         <>
@@ -70,7 +71,7 @@ const attendanceSystem = () => {
                     paraThree={undefined}
                     btnName="Request Demo"
                     img="/images/Student-Attendance-System.webp" type={1} />
-
+    <RummySection heading={"Why CHOOSE VIGOCamp?"} data={rummySection} imageUrl="/images/RFID-banner.png" width={500} height={200}/>
                 <div className=" mx-auto  w-11/12 max-w-7xl font-nunito">
                     <GridSection
                         values={usedFor}
@@ -78,7 +79,7 @@ const attendanceSystem = () => {
                         para="Learning Management Systems are your institution's digital command centre, in other words, making learning and administrative tasks easier as well as more effective. They are dynamic platforms whose designs are meant to revamp educational and training experiences while bringing a simplification of administrative workflows."
                         type={1} types={undefined} />
                 </div>
-
+            
                 <ScrollFeatures />
                 <WhyChooseSection title={" Why Choose MasterSoft’s Learning Management Software (LMS)?"}
                  featureMobileTitle={"100+ High Impact Courses"} 

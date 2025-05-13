@@ -5,7 +5,7 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
   const [activeTab, setActiveTab] = useState("Transportation/Library /Hostel");
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-yellow-50 ">
+    <div className="min-h-screen  ">
       <h1 className=" sm:text-3xl text-2xl  font-bold text-center mb-2 ">
         {title}
       </h1>

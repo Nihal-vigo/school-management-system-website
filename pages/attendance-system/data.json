@@ -141,5 +141,18 @@
             "value": "10+",
             "description": "Decade of experience building scalable, secure, and user-friendly apps."
         }
-    ]
+    ],
+    "rummySection": {
+        "features": [
+          "Product Designed by a Team of rummy experts",
+          "Associated with Rummy software development for years",
+          "Solutions that work on all platforms such as Web, iOS, and Android",
+          "Cost-effective and time-saving gaming solutions",
+          "Powerful and secure coding",
+          "Quick & On-time delivery",
+          "Free business & marketing guidance for new",
+          "24*7 technical support with quick response."
+        ],
+        "buttonText": "REQUEST A QUOTE"
+    }
 }

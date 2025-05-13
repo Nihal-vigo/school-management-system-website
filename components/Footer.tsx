@@ -56,7 +56,7 @@ const Footer = () => {
         <div className='absolute bg-black text-white 2xl:w-3/4 w-11/12  lg:rounded-2xl rounded-t-none rounded-b-md -top-[20%] left-2/4 -translate-x-2/4 mx-auto'>
           <div className='flex w-full items-center '>
             <div className="space-y-5 w-[40%]  p-[25px]">
-              <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
+              <p className="text-[20px] capitalize font-bold !m-0 text-secondary">Contact</p>
 
               <div className="text-[16px] flex flex-col md:gap-2 gap-1">
                 {contactInfo.map(({ icon, href, label, target }, index) => (
@@ -74,7 +74,7 @@ const Footer = () => {
                     </span>
                   </div>
                 ))}
-                <p className="text-lg font-bold ">Follow Us</p>
+                <p className="text-lg font-bold text-secondary">Follow Us</p>
                 <ul className="flex gap-4 !p-0 list-none justify-start flex-wrap ">
                   {socialLinks.map(({ href, label, icon: Icon }, index) => (
                     <li key={index}>
@@ -108,7 +108,7 @@ const Footer = () => {
         <div className='text-white text-center pt-24 space-y-10 w-11/12 mx-auto ' >
           <div className='flex items-start justify-between text-left w-5/6 mx-auto'>
             <div className="space-y-5 flex-1">
-              <p className="text-[20px] capitalize font-bold !m-0 ">Company</p>
+              <p className="text-[20px] capitalize font-bold !m-0 text-secondary">Company</p>
 
               <div className="text-[16px] flex flex-col md:gap-2 gap-1">
                 {navLinks.map(({ href, label }, index) => (
@@ -120,7 +120,7 @@ const Footer = () => {
             </div>
             <div className='space-y-5 flex-1'>
 
-              <p className="text-[20px] capitalize font-bold !m-0 ">Special Features</p>
+              <p className="text-[20px] capitalize font-bold !m-0 text-secondary">Special Features</p>
 
               <div className="text-[16px] flex flex-col md:gap-2 gap-1 h-[200px] overflow-auto ">
                 {services.map(({ href, name }, index) => (
@@ -132,7 +132,7 @@ const Footer = () => {
             </div>
             <div className="pr-2 flex-1">
               <div className="space-y-5 px-2">
-                <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
+                <p className="text-[20px] capitalize font-bold !m-0 text-secondary">Contact</p>
 
                 <div className="text-[16px] flex flex-col md:gap-2 gap-1">
                   {contactInfo.map(({ icon, href, label, target }, index) => (
@@ -170,7 +170,7 @@ const Footer = () => {
         <div className='absolute  lg:w-5/6 w-11/12  space-y-5 -top-[44%] left-2/4 -translate-x-2/4 mx-auto '>
           <div className="flex flex-wrap justify-between p-3 gap-4 bg-black rounded-2xl">
             <div className="space-y-5  px-2">
-              <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
+              <p className="text-[20px] capitalize font-bold !m-0 text-secondary">Contact</p>
 
               <div className="text-[16px] flex flex-col md:gap-2 gap-1">
                 {contactInfo.map(({ icon, href, label, target }, index) => (
@@ -218,7 +218,7 @@ const Footer = () => {
         </div>
         <div className="flex  flex-wrap justify-between xl:w-3/5 w-11/12 mx-auto gap-4 text-white ">
           <div className="space-y-3 ">
-            <p className="text-[20px] capitalize font-bold !m-0 ">Company</p>
+            <p className="text-[20px] capitalize font-bold !m-0 text-secondary">Company</p>
             <div className=" flex flex-col md:gap-2 gap-1">
               {navLinks.map(({ href, label }, index) => (
                 <Link key={index} href={href} className="no-underline text-white">
@@ -230,7 +230,7 @@ const Footer = () => {
 
           <div className='space-y-3  '>
 
-            <p className="text-[20px] capitalize font-bold !m-0 ">Special Features</p>
+            <p className="text-[20px] capitalize font-bold !m-0 text-secondary">Special Features</p>
  
             <div className="flex flex-col md:gap-2 gap-1 h-[120px] overflow-auto">
               {services.map(({ href, name }, index) => (
@@ -242,7 +242,7 @@ const Footer = () => {
           </div>
 
           <div className="space-y-5">
-            <p className="text-[20px] capitalize font-bold !m-0">Contact</p>
+            <p className="text-[20px] capitalize font-bold !m-0 text-secondary">Contact</p>
             <div className="flex flex-col md:gap-2 gap-1">
               {contactInfo.map(({ icon, href, label, target }, index) => (
                 <div key={index} className="text-white flex gap-3 w-full items-center">
