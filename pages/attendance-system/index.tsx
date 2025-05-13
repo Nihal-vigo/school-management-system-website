@@ -80,7 +80,9 @@ const attendanceSystem = () => {
                 </div>
 
                 <ScrollFeatures />
-                <WhyChooseSection />
+                <WhyChooseSection title={" Why Choose MasterSoft’s Learning Management Software (LMS)?"}
+                 featureMobileTitle={"100+ High Impact Courses"} 
+                 featureMobiledesc={"Access over 100 carefully curated courses covering development, data science, cybersecurity, and more — taught by professionals, with hands-on projects to boost your skills immediately."}  />
                 <div className='bg-primary my-10 relative'>
                     <div className=" mx-auto  w-11/12 max-w-7xl font-nunito ">
              

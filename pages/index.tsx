@@ -360,7 +360,7 @@ const homepage = () => {
        0,0,0,321.39,56.44Z"
                 fill="#ffffff"
                 stroke="#ffffff"
-                stroke-width="1"
+                strokeWidth="1"
               />
             </svg>
 

@@ -4,13 +4,8 @@ import Image from "next/image";
 import { MdDonutLarge, MdOutlineWorkOutline } from "react-icons/md";
 import $ from 'jquery';
 import { RiPhoneLockLine } from "react-icons/ri";
-import { IoCartOutline } from "react-icons/io5";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { TbCloudComputing, TbDeviceImacCode } from "react-icons/tb";
-import { FaPenNib } from "react-icons/fa6";
-import Popup from "./Popup"
 import { PiArrowUpRightBold } from "react-icons/pi";
-import { CgWebsite } from "react-icons/cg";
 import { LuScrollText } from "react-icons/lu";
 import SignUp from "./SignUp";
 import Login from "./Login";
@@ -98,20 +93,20 @@ export default function DesktopNav(props: any) {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isSignupOpen, setIsSignupOpen] = useState(false);
 
-  // Toggle login/signup modal
+  
   const openSignup = () => {
     setIsSignupOpen(true);
-    setIsLoginOpen(false); // Ensure login modal is closed
+    setIsLoginOpen(false); 
   };
 
   const openLogin = () => {
     setIsLoginOpen(true);
-    setIsSignupOpen(false); // Ensure signup modal is closed
+    setIsSignupOpen(false); 
   };
 
   const closeModal = () => {
     setIsSignupOpen(false);
-    setIsLoginOpen(false); // Close both modals
+    setIsLoginOpen(false); 
   };
 
   return (

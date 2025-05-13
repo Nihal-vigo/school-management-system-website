@@ -28,11 +28,11 @@ const features = [
   },
 ];
 
-const WhyChooseSection = () => {
+const WhyChooseSection = ({ featureMobileTitle, featureMobiledesc, title }) => {
   return (
     <section className="py-16 px-4 max-w-7xl mx-auto font-nunito space-y-10">
       <h2 className="text-3xl font-bold text-primary">
-        Why Choose MasterSoft’s Learning Management Software (LMS)?
+        {title}
       </h2>
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
@@ -42,8 +42,8 @@ const WhyChooseSection = () => {
 
           return (
             <div
-              key={index} className="group">
-              <div className={`bg-white border-2  rounded-xl p-6 shadow-sm text-gray-800  rounded-t-3xl rounded-b-3xl rounded-tr-none rounded-bl-none group-hover:rounded-t-3xl group-hover:rounded-b-3xl group-hover:rounded-br-none group-hover:rounded-tl-none group-hover:bg-gradient-to-br from-[#092f5c]  to-[#000] group-hover:text-white transition-all duration-500 ease-in-out  ${isHighlight ? "lg:row-span-2" : ""
+              key={index}
+              className={`bg-white border-2  rounded-xl p-6 shadow-sm text-gray-800  rounded-t-3xl rounded-b-3xl rounded-tr-none rounded-bl-none hover:rounded-t-3xl hover:rounded-b-3xl hover:rounded-br-none hover:rounded-tl-none  transition-all duration-500 ease-in-out hover:border-primary  ${isHighlight ? "lg:row-span-2" : ""
                 } ${isLast
                   ? "lg:col-span-2 lg:block hidden" // visible only on lg
                   : ""
@@ -53,19 +53,18 @@ const WhyChooseSection = () => {
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-base">{feature.description}</p>
             </div>
-            </div>
           );
         })}
 
         {/* Mobile-only version of the last card */}
-        <div className="group">
-          <div className="bg-white border rounded-xl p-6 shadow-sm text-gray-800 lg:hidden  rounded-t-3xl rounded-b-3xl rounded-tr-none rounded-bl-none group-hover:rounded-t-3xl group-hover:rounded-b-3xl group-hover:rounded-br-none group-hover:rounded-tl-none group-hover:bg-gradient-to-br from-[#092f5c]  to-[#000] group-hover:text-white transition-all duration-500 ease-in-out ">
-            <div className="text-3xl mb-4">📚</div>
-            <h3 className="text-xl font-semibold mb-2">100+ High Impact Courses</h3>
-            <p className="text-sm">
-              Access over 100 carefully curated courses covering development, data science, cybersecurity, and more — taught by professionals, with hands-on projects to boost your skills immediately.
-            </p>
-          </div>
+
+        <div className="bg-white border rounded-xl p-6 shadow-sm text-gray-800 lg:hidden  rounded-t-3xl rounded-b-3xl rounded-tr-none rounded-bl-none hover:rounded-t-3xl hover:rounded-b-3xl  hover:rounded-br-none hover:rounded-tl-none hover:border-primary  transition-all duration-500 ease-in-out ">
+          <div className="text-3xl mb-4">📚</div>
+          <h3 className="text-xl font-semibold mb-2">{featureMobileTitle}</h3>
+          <p className="text-sm">
+            {featureMobiledesc}
+
+          </p>
         </div>
       </div>
     </section>

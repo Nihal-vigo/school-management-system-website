@@ -32,18 +32,18 @@ const socialLinks = [
 const contactInfo = [
   {
     icon: <FaPhoneAlt size={17} className="text-white/90 hover:text-white" />,
-    href: "tel:+123456789",
-    label: "+1234567890",
+    href: "tel:+918209514612",
+    label: "91 8209514612",
   },
   {
     icon: <FaEnvelopeOpenText size={17} className="text-white/90" />,
-    href: "mailto:abc@xyz.com",
-    label: "abc@xyz.com",
+    href: "mailto:contact@vigorousit.com",
+    label: "contact@vigorousit.com",
   },
   {
     icon: <IoLocationSharp size={17} className="text-white/90 mt-0.5" />,
-    href: "https://maps.app.goo.gl/k16M8rPogXYgbhNy9",
-    label: "address",
+    href: "www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222.3380238326932!2d75.7397929011729!3d26.922265053857455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db367adcc873b%3A0xbe79e60941c05e9a!2s250%2C%20Janak%20Marg!5e0!3m2!1sen!2sin!4v1738127244490!5m2!1sen!2sin",
+    label: "250, Janak Marg, Hanuman Nagar Extension, Officers Campus Colony, Jaswant Nagar, Jaipur, Rajasthan 302012",
     target: "_blank",
   },
 ];
@@ -96,8 +96,8 @@ const Footer = () => {
             <div className='w-[60%] rounded-r-2xl overflow-hidden'>
               <div className="wpb_raw_code wpb_content_element wpb_raw_html " >
                 <div className="wpb_wrapper">
-                  <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.084485494637!2d-122.41941518468164!3d37.774929779759595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2e44a349%3A0x3c5e3e4f9ffabeed!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1614030258460!5m2!1sen!2sus" width="100%" height="270" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222.3380238326932!2d75.7397929011729!3d26.922265053857455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db367adcc873b%3A0xbe79e60941c05e9a!2s250%2C%20Janak%20Marg!5e0!3m2!1sen!2sin!4v1738127244490!5m2!1sen!2sin" width="100%" height="290" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+    </div>
               </div>
             </div>
           </div>
