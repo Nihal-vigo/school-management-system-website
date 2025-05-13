@@ -42,29 +42,30 @@ const WhyChooseSection = () => {
 
           return (
             <div
-              key={index}
-              className={`bg-white border rounded-xl p-6 shadow-sm text-gray-800 ${
-                isHighlight ? "lg:row-span-2" : ""
-              } ${
-                isLast
+              key={index} className="group">
+              <div className={`bg-white border-2  rounded-xl p-6 shadow-sm text-gray-800  rounded-t-3xl rounded-b-3xl rounded-tr-none rounded-bl-none group-hover:rounded-t-3xl group-hover:rounded-b-3xl group-hover:rounded-br-none group-hover:rounded-tl-none group-hover:bg-gradient-to-br from-[#092f5c]  to-[#000] group-hover:text-white transition-all duration-500 ease-in-out  ${isHighlight ? "lg:row-span-2" : ""
+                } ${isLast
                   ? "lg:col-span-2 lg:block hidden" // visible only on lg
                   : ""
-              }`}
+                }`}
             >
               <div className="text-3xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-sm">{feature.description}</p>
+              <p className="text-base">{feature.description}</p>
+            </div>
             </div>
           );
         })}
 
         {/* Mobile-only version of the last card */}
-        <div className="bg-white border rounded-xl p-6 shadow-sm text-gray-800 lg:hidden">
-          <div className="text-3xl mb-4">📚</div>
-          <h3 className="text-xl font-semibold mb-2">100+ High Impact Courses</h3>
-          <p className="text-sm">
-            Access over 100 carefully curated courses covering development, data science, cybersecurity, and more — taught by professionals, with hands-on projects to boost your skills immediately.
-          </p>
+        <div className="group">
+          <div className="bg-white border rounded-xl p-6 shadow-sm text-gray-800 lg:hidden  rounded-t-3xl rounded-b-3xl rounded-tr-none rounded-bl-none group-hover:rounded-t-3xl group-hover:rounded-b-3xl group-hover:rounded-br-none group-hover:rounded-tl-none group-hover:bg-gradient-to-br from-[#092f5c]  to-[#000] group-hover:text-white transition-all duration-500 ease-in-out ">
+            <div className="text-3xl mb-4">📚</div>
+            <h3 className="text-xl font-semibold mb-2">100+ High Impact Courses</h3>
+            <p className="text-sm">
+              Access over 100 carefully curated courses covering development, data science, cybersecurity, and more — taught by professionals, with hands-on projects to boost your skills immediately.
+            </p>
+          </div>
         </div>
       </div>
     </section>

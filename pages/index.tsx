@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import dynamic from 'next/dynamic'
 import PageData from "./data.json"
-import PartnersLogoMobileView from "../components/PartnersLogoMobileView";
 import OtherExpertise from "./roles";
 import Link from "next/link";
 import About from "../components/About";
@@ -373,7 +372,7 @@ const homepage = () => {
           paraOne="We take charge of enhancing the school’s efficiency and letting them manage all school operations with an all-in-one powerful platform. VigoCamp software is specifically helpful in offering a digitally connected school ecosystem, which makes it a perfect software that has the power to fulfil the needs of modern-day educational institutions. It makes the communication process easier with integrations like WhatsApp/SMS APIs, while further integrations play an important role in offering a paperless and centralized administrative system."
           paraTwo=""
           paraThree="" btnName={undefined}
-          img="/images/expertise/travel-app/about-img.webp" type={undefined}        />
+          img="/images/Student-Attendance-System.webp" type={undefined}        />
 
         <Panels
           title="VigoCamp Management Software Panel Features"
@@ -384,9 +383,9 @@ const homepage = () => {
           AdminTech="Admin Panel"
           PanelOneTech="Teachers Panel"
           PanelTwoTech="Student/Parents Panel"
-          AdminImage="/images/expertise/travel-app/panels/admin-panel.webp"
-          PanelOneImage="/images/expertise/travel-app/panels/user-panel.webp"
-          PanelTwoImage="/images/expertise/travel-app/panels/agent-panel.webp"
+          AdminImage="/images/user-panel.webp"
+          PanelOneImage="/images/user-panel.webp"
+          PanelTwoImage="/images/user-panel.webp"
           PanelIconsOne={undefined} PanelIconsTwo={undefined} PanelIconsThree={undefined} types={"white-image"}
         />
 

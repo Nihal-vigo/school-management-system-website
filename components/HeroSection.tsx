@@ -20,7 +20,7 @@ const HeroSection = ({ title, titleOne, para, buttonCount, buttonNames, callToAc
       <div className="sm:pt-10 pt-5 grid sm:grid-cols-2 w-1/2 xl:gap-24 sm:gap-36 gap-5  ">
         {buttonCount >= 1 && (
           <div className="w-1/2">
-            <button className="w-28 h-9 justify-center rounded-md bg-secondary text-white hover:bg-primary/80 transition-all duration-500 ease-in flex gap-2 items-center relative z-20" >
+            <button className="w-28 h-9 justify-center rounded-md bg-secondary text-white hover:bg-secondary/80 transition-all duration-500 ease-in flex gap-2 items-center relative z-20" >
               Get Demo
             </button>
           </div>

@@ -50,7 +50,7 @@ const Signup = ({ isOpen, onClose, onSwitch }) => {
 
                 <div className="hidden md:block w-1/2 relative overflow-hidden">
                     <img
-                        src="/images/home/pop-up.webp"
+                        src="/images/pop-up.webp"
                         alt="Creative"
                         className="w-full h-full object-cover rounded-l-none rounded-r-2xl"
                     />

@@ -10,7 +10,6 @@ import { TbCloudComputing, TbDeviceImacCode } from "react-icons/tb";
 import { FaPenNib } from "react-icons/fa6";
 import Popup from "./Popup"
 import { PiArrowUpRightBold } from "react-icons/pi";
-import HeaderContacts from "./HeaderContacts";
 import { CgWebsite } from "react-icons/cg";
 import { LuScrollText } from "react-icons/lu";
 import SignUp from "./SignUp";

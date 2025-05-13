@@ -18,9 +18,6 @@ const Header = dynamic(() => import('../../components/Header'), {
   loading: () => <p>Loading...</p>,
 })
 
-const Process = dynamic(() => import('../../components/Process'), {
-  loading: () => <p>Loading...</p>,
-})
 
 // const PartnersLogo = dynamic(() => import('../../components/PartnersLogo'), {
 //   loading: () => <p>Loading...</p>,
@@ -197,8 +194,6 @@ export default function AboutUs({ initialData }) {
         </section>
 
 
-        {/* 6 */}
-        <Process />
 
         {/* 7 */}
         {/* <section className="w-full bg-black space-y-20 pb-10 lg:pt-0 pt-20">
