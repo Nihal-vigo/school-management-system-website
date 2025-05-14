@@ -303,7 +303,7 @@ const homepage = () => {
                 <div className="flex justify-center items-center relative mt-32">
                   <div className="relative w-[90%] max-w-[600px]">
                     <Image
-                      src="/images/laptop-header.png"
+                      src="/images/home/vigocamp-laptop.webp"
                       alt="Laptop"
                       className="w-full h-auto"
                       width={600}
@@ -311,7 +311,7 @@ const homepage = () => {
                     />
                     <div className="absolute right-2 sm:right-10 top-2 sm:top-5 bounce-slow w-[30%] max-w-[180px]">
                       <Image
-                        src="/images/mobile1.png"
+                        src="/images/home/vigocamp-mobile.webp"
                         alt="Mobile"
                         className="w-full h-auto"
                         width={180}
@@ -367,12 +367,41 @@ const homepage = () => {
           </div>
         </div>
 
+
+    {/* <div className="bg-[#20002c] text-white rounded-3xl  flex flex-col md:flex-row items-center justify-between overflow-hidden relative">
+      <div className="max-w-xl z-10">
+        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          Get started with <br /> Outseta today
+        </h2>
+        <p className="text-lg text-gray-300 mb-6">
+          Try Outseta free for 7 days—you’ll have access to every feature. <br />
+          Cancel any time.
+        </p>
+        <button className="bg-yellow-400 hover:bg-yellow-300 text-black font-medium py-3 px-6 rounded-lg text-base flex items-center gap-2 transition">
+          Start your free trial →
+        </button>
+      </div>
+
+      <div className="relative w-full md:w-[600px] mt-10 md:mt-40 flex justify-end transform rotate-3">
+        <Image
+          src={"/images/dashboard-design-example-hcare.png"}
+          alt="Dashboard screenshot"
+          className="rounded-xl shadow-2xl"
+          priority
+          width={800}
+          height={300}
+        />
+      </div>
+    </div> */}
+
+
+
         <About
           title={"Welcome To VigoCamp: All-In-One School ERP Software"}
           paraOne="We take charge of enhancing the school’s efficiency and letting them manage all school operations with an all-in-one powerful platform. VigoCamp software is specifically helpful in offering a digitally connected school ecosystem, which makes it a perfect software that has the power to fulfil the needs of modern-day educational institutions. It makes the communication process easier with integrations like WhatsApp/SMS APIs, while further integrations play an important role in offering a paperless and centralized administrative system."
           paraTwo=""
           paraThree="" btnName={undefined}
-          img="/images/Student-Attendance-System.webp" type={undefined}        />
+          img="/images/home/about-us.webp" type={undefined}        />
 
         <Panels
           title="VigoCamp Management Software Panel Features"
@@ -383,9 +412,9 @@ const homepage = () => {
           AdminTech="Admin Panel"
           PanelOneTech="Teachers Panel"
           PanelTwoTech="Student/Parents Panel"
-          AdminImage="/images/user-panel.webp"
-          PanelOneImage="/images/user-panel.webp"
-          PanelTwoImage="/images/user-panel.webp"
+          AdminImage="/images/home/panels/admin-panel.webp"
+          PanelOneImage="/images/home/panels/teacher-panel.webp"
+          PanelTwoImage="/images/home/panels/student-parent-panel.webp"
           PanelIconsOne={undefined} PanelIconsTwo={undefined} PanelIconsThree={undefined} types={"white-image"}
         />
 

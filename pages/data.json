@@ -248,84 +248,84 @@
   "TeachersPanel": [
     {
       "title": "Teaching Dashboard",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/teaching-dashboard.svg",
       "desc": "With a personalized teaching dashboard, teachers can manage their schedules, tasks, and listed communications. ",
       "width": "50",
       "height": "20"
     },
     {
       "title": "Resource Sharing",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/resource-sharing.svg",
       "desc": "Creating and sharing notes, PDFs, and lesson plans is all possible for resource sharing.",
       "width": "50",
       "height": "20"
     },
     {
       "title": "Attendance Management",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/attendance-management.svg",
       "desc": "With built-in biometric sync, teachers can analyze the attendance of students. ",
       "width": "50",
       "height": "20"
     },
     {
       "title": "Assignment Manager",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/assignment-manager.svg",
       "desc": "With the role of assignment manager, teachers can check, arrange, and assign tasks, while collecting and marking them is also an inbuilt feature on Vigo.",
       "width": "50",
       "height": "20"
     },
     {
       "title": "Exam Creation",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/exam-creation.svg",
       "desc": "No paperwork; the teacher will sit on screen and create exams, whether they are MCQ-based or descriptive papers.",
       "width": "50",
       "height": "20"
     },
     {
       "title": "Evaluation Panel",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/evaluation-panel.svg",
       "desc": "This panel specifically helps teachers in remarking on the student’s numbers to give a final score.",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Student Performance Reports",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/student-performance-reports.svg",
       "desc": "Checking student’s papers and creating their batch-wise marking sheets is also effortless with Vigo.",
       "width": "50",
       "height": "20"
     },
     {
       "title": "Communication Interface",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/communication-interface.svg",
       "desc": "With a personalized communication section, teachers can stay in touch with students while communicating with parents, through it is also easy for them. ",
       "width": "50",
       "height": "20"
     },
     {
       "title": "Leave Request & Approval",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/leave-request-approval.svg",
       "desc": "This panel is specifically designed for teachers, where they can send leave requests to the administration for approval. ",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Disciplinary Record Input",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/disciplinary-record-input.svg",
       "desc": "By analyzing student’s behaviors, teachers can set rewards or punishments based on behalf of student’s approach.",
       "width": "50",
       "height": "20"
     },
     {
       "title": "Student Feedback Logs",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/student-feedback.svg",
       "desc": "Teachers can collect reviews in the form of feedback from their students to make changes in their teaching behavior or patterns.",
       "width": "50",
       "height": "20"
     },
     {
       "title": "Staff Calendar Integration",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/teachers-panel/staff-calender.svg",
       "desc": "Teachers have to collaborate in each staff meeting, and that is where this feature helps them.",
       "width": "50",
       "height": "60"
@@ -341,77 +341,77 @@
     },
     {
       "title": "Timetable",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/timetable.svg",
       "desc": "Schools can randomly make changes to the timetable, but with this software, students can keep a close eye on it to understand those changes.",
       "width": "40",
       "height": "60"
     },
     {
       "title": "Personal Dashboards",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/personal-dashboards.svg",
       "desc": "Students have a personalized dashboard where all data regarding their academic performance is available, while parents can also contribute through their profiles. ",
       "width": "40",
       "height": "60"
     },
     {
       "title": "Real-Time Attendance",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/real-time-attendance.svg",
       "desc": "Using manual methods or biometrics for logs, students can manage and analyze their real-time attendance status.",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Assignment Submission",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/assignment-submission.svg",
       "desc": "To submit assignments from the comfort of their home, students can send them digitally and they will get the feedback in the same way.",
       "width": "40",
       "height": "60"
     },
     {
       "title": "Progress Tracker",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/progress-tracker.svg",
       "desc": "This is an amazing add-on in VigoCamp, which allows students to personally track their progress.",
       "width": "40",
       "height": "60"
     },
     {
       "title": "Exam Schedule",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/exam-schedule.svg",
       "desc": "All data regarding exam schedules, seating, and offered digital passes is accessible to students. ",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Live Class Integration",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/live-class-integration.svg",
       "desc": "To promote digital education, Vigo offers a feature that allows students to join virtual classrooms for advanced studies. ",
       "width": "40",
       "height": "60"
     },
     {
       "title": "Hostel Room & Meal Information",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/hostel-room-meal-information.svg",
       "desc": "A detailed section through which students can access information about the regular mess hos, tel inventory, and so on.",
       "width": "40",
       "height": "60"
     },
     {
       "title": "Certifications",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/certifications.svg",
       "desc": "A detailed section is set for sharing certification-related documents direct with the students. ",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Transport Route Info",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/transport-route-info.svg",
       "desc": "Students have detailed access to the route through which they are going to use their school reach.",
       "width": "40",
       "height": "60"
     },
     {
       "title": "Notifications & Alerts",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/notifications-alerts.svg",
       "desc": "By notifications, students will remain aware of their upcoming events, dues and other happenings.",
       "width": "40",
       "height": "60"
@@ -420,84 +420,84 @@
   "AdminPanel": [
     {
       "title": "Academic Management",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/academic-management.svg",
       "desc": "Through this centralized dashboard, the administration has the credibility to keep a keen eye on each happening in the institute.",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Academic Setup",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/academic-setup.svg",
       "desc": "It allows admins to complete different functionalities like defining courses, grading systems, and syllabus plans.",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Role-Based Access Control",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/role-based-access-control.svg",
       "desc": "Allowing control of software happenings to all the staff on behalf of their expertise is also under the admin's powers",
       "width": "25",
       "height": "60"
     },
     {
       "title": "Admission Management",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/admission-management.svg",
       "desc": "Managing both online and offline admission-related operations is all under the admin's observation.",
       "width": "30",
       "height": "60"
     },
     {
       "title": "Fee Management System",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/fee-management-system.svg",
       "desc": "All fee management-related tasks, including fee collection, concession and dues, are handled by the admin.",
       "width": "50",
       "height": "60"
     },
     {
       "title": "HRM And Payslip",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/hrm-payslip.svg",
       "desc": "After generating payslips, the admin’s verification is compulsory before assigning them to staff.",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Finance & Accounting",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/finance-accounting.svg",
       "desc": "Managing detailed budget ledgers, balance sheets, and departmental budgeting is all under the admin stake.",
       "width": "30",
       "height": "60"
     },
     {
       "title": "Exam Control",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/exam-control.svg",
       "desc": "From setting up exam halls to sharing finalized reports. Admins observe and finalize all exam-related operations",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Timetable Management",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/students-parents-panel/timetable.svg",
       "desc": "All about setting schedules and making changes in timetables are under the handling of admins.",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Hostel Management",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/hostel-management.svg",
       "desc": "Keeping a keen eye on hostel entring and exiting individuals and managing other inventory or meal-related problems are also handled by admins.",
       "width": "30",
       "height": "60"
     },
     {
       "title": "Certifications",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/certifications.svg",
       "desc": "Making and offering certificates to their students is also handled by the admin.",
       "width": "50",
       "height": "60"
     },
     {
       "title": "Data Backup And Security",
-      "img": "/images/promotional-offers.svg",
+      "img": "/images/home/panels/panel-icons/admin-panel/data-backup-security.svg",
       "desc": "All rights to access the school’s related data, including student’s data and parent’s payment receipts data are included remain under the admin observation for higher security.",
       "width": "50",
       "height": "60"
@@ -506,7 +506,7 @@
   "benefits": [
     {
       "title": "Benefits Of School Management",
-      "img": "/images/design.svg",
+      "img": "/images/home/benefits/school-management.svg",
       "decs": "",
       "items": [
         "A centralized dashboard that lets them monitor every department from one place",
@@ -521,7 +521,7 @@
     },
     {
       "title": "Benefits For Teachers",
-      "img": "/images/design.svg",
+      "img": "/images/home/benefits/for-teachers.svg",
       "decs": "",
       "items": [
         "One-click attendance marking system",
@@ -536,7 +536,7 @@
     },
     {
       "title": "Benefits For Students & Parents",
-      "img": "/images/design.svg",
+      "img": "/images/home/benefits/students-parents.svg",
       "decs": "",
       "items": [
         "Better communication with teachers and admins that promotes academic tracking",

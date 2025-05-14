@@ -12,8 +12,10 @@ import ScrollFeatures from '../../components/ScrollFeatures'
 import WhyChooseSection from '../../components/WhyChooseSection'
 import BenefitsPages from '../../components/BenefitsPages'
 import RummySection from '../../components/RummySection'
+import CallToActionService from '../../components/CallToActionService'
+import CallToActionTwo from '../../components/CallToActionTwo'
 
-const { estimation, usedFor, needFor, faqDataOne, faqDataTwo, innerBenefits,rummySection } = PageData;
+const { estimation, usedFor, needFor, faqDataOne, faqDataTwo, innerBenefits, rummySection } = PageData;
 const attendanceSystem = () => {
     return (
         <>
@@ -71,7 +73,9 @@ const attendanceSystem = () => {
                     paraThree={undefined}
                     btnName="Request Demo"
                     img="/images/Student-Attendance-System.webp" type={1} />
-    <RummySection heading={"Why CHOOSE VIGOCamp?"} data={rummySection} imageUrl="/images/RFID-banner.png" width={500} height={200}/>
+            
+                <RummySection heading={"Why CHOOSE VIGOCamp?"} data={rummySection} imageUrl="/images/RFID-banner.png" width={500} height={200} />
+             
                 <div className=" mx-auto  w-11/12 max-w-7xl font-nunito">
                     <GridSection
                         values={usedFor}
@@ -79,14 +83,18 @@ const attendanceSystem = () => {
                         para="Learning Management Systems are your institution's digital command centre, in other words, making learning and administrative tasks easier as well as more effective. They are dynamic platforms whose designs are meant to revamp educational and training experiences while bringing a simplification of administrative workflows."
                         type={1} types={undefined} />
                 </div>
-            
+          
+                <CallToActionService heading={"Get started with Outseta today "} content={" Try Outseta free for 7 days you'll have access to every feature. Cancel any time."} imageUrl="/images/Student-Attendance-System.webp" button={"Start your free trial"} />
+                <CallToActionTwo  Heading1={"Live on Passionfroot &#x2600;"} Heading2={"Thousands of campaigns launched to date"} content={"with 60% lower CPC than Linkedin Ads* "} Button1={"Get access &rarr;"} Button2={"Book a call"}/>
                 <ScrollFeatures />
+         
                 <WhyChooseSection title={" Why Choose MasterSoft’s Learning Management Software (LMS)?"}
-                 featureMobileTitle={"100+ High Impact Courses"} 
-                 featureMobiledesc={"Access over 100 carefully curated courses covering development, data science, cybersecurity, and more — taught by professionals, with hands-on projects to boost your skills immediately."}  />
+                    featureMobileTitle={"100+ High Impact Courses"}
+                    featureMobiledesc={"Access over 100 carefully curated courses covering development, data science, cybersecurity, and more — taught by professionals, with hands-on projects to boost your skills immediately."} />
+      
                 <div className='bg-primary my-10 relative'>
                     <div className=" mx-auto  w-11/12 max-w-7xl font-nunito ">
-             
+
                         <WhyNeed
                             values={needFor}
                             title="Why Does Your Institution Need LMS Software?"
@@ -95,20 +103,20 @@ const attendanceSystem = () => {
 
                     </div>
                     <div className="absolute left-10 bottom-[10%] lg:block hidden circle-motion">
-                            <Image src="/images/tri1.png" alt="" width={50} height={200} className="orbit " />
-                        </div>
+                        <Image src="/images/tri1.png" alt="" width={50} height={200} className="orbit " />
+                    </div>
 
-                        <div className="absolute left-10 bottom-[60%] lg:block hidden">
-                            <Image src="/images/sq.png" alt="" width={20} height={200} className="orbit " />
-                        </div>
+                    <div className="absolute left-10 bottom-[60%] lg:block hidden">
+                        <Image src="/images/sq.png" alt="" width={20} height={200} className="orbit " />
+                    </div>
 
-                        <div className="absolute right-10 bottom-[60%] lg:block hidden half-circle-motion">
-                            <Image src="/images/tri1.png" alt="" width={50} height={200} className="orbit " />
-                        </div>
+                    <div className="absolute right-10 bottom-[60%] lg:block hidden half-circle-motion">
+                        <Image src="/images/tri1.png" alt="" width={50} height={200} className="orbit " />
+                    </div>
 
-                        <div className="absolute right-10 bottom-[20%] lg:block hidden ">
-                            <Image src="/images/tri4.png" alt="" width={20} height={200} className="orbit" />
-                        </div>
+                    <div className="absolute right-10 bottom-[20%] lg:block hidden ">
+                        <Image src="/images/tri4.png" alt="" width={20} height={200} className="orbit" />
+                    </div>
                 </div>
 
                 <BenefitsPages
@@ -118,7 +126,6 @@ const attendanceSystem = () => {
                     onButtonClick={() => console.log('Demo clicked')}
                     benefits={innerBenefits}
                 />
-
 
                 <FaqSection faqDataOne={faqDataOne} faqDataTwo={faqDataTwo} />
 
