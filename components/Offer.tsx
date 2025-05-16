@@ -8,7 +8,7 @@ const Offer = ({ title, desc, Offer }) => {
                 <h2 className=" sm:text-3xl text-2xl font-semibold font-inter">
                     {title}
                 </h2>
-                <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className=''/>
+                <Image src={'/images/home/what-we-offer.webp'} alt={''} width={200} height={60} className=''/>
                 <p className="lg:text-md text-base mt-4">
                     {desc}
                 </p>

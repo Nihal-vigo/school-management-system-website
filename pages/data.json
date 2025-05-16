@@ -665,47 +665,47 @@
       "image": "/images/transportation-library-hostel-info.webp",
       "features": [
       {
-        "icon": "🚌",
+        "img": "/images/home/advance-features/transport-library-icons/live-vehicle.svg",
         "title": "Live Vehicle Tracking",
         "description": "Through the tool, both administrators and parents can access the live location of school buses. In addition, remaining aware of real-time vehicle speed, and stoppage time is all possible with this software."
       },
       {
-        "icon": "📍",
+        "img": "/images/home/advance-features/transport-library-icons/vehicle-driver-details.svg",
         "title": "Vehicle Driver Details",
         "description": "Vigo offers detailed insights about vehicle numbers and profiles of verified drivers. Further, additional information like vehicle insurance and health stats keeps parents satisfied about their children's safety."
       },
       {
-        "icon": "🗺️",
+        "img": "/images/home/advance-features/transport-library-icons/route-optimization.svg",
         "title": "Route Optimization And Transport Fee",
         "description": "AI-powered tools help us in clearing the way by choosing traffic less and clean routes. Further, the built-in feature also manages transport fee cycles with automated billing and so on."
       },
       {
-        "icon": "🚐",
+        "img": "/images/home/advance-features/transport-library-icons/books-lost.svg",
         "title": "Books Lost Fines",
         "description": "The reports regarding book allotting and losing are handled by the school administration, while forgiving a fine is also under the authority of the administrators."
       },
       {
-        "icon": "🏨",
+        "img": "/images/home/advance-features/transport-library-icons/book-inventory.svg",
         "title": "Book Inventory With Barcoding",
         "description": "With a barcode pass, students can enter and borrow books of their choice. This barcode specifically helps in preventing time loss with a contactless book borrowing process."
       },
       {
-        "icon": "📋",
+        "img": "/images/home/advance-features/transport-library-icons/safety-alert.svg",
         "title": "Safety Alert",
         "description": "In scenarios of serious conditions, we send safety alerts to the guardians' numbers and the nearest safety authorities. It keeps both the school and parents satisfied."
       },
       {
-        "icon": "📖",
+        "img": "/images/home/advance-features/transport-library-icons/hostel-meal-tracking.svg",
         "title": "Hostel Meal Tracking System",
         "description": "This add-on helps schools manage a lot about the meal system, in which tracking kitchen inventory, record consumption patterns and meal planning are included. It also helps the administration in tracking supplies."
       },
       {
-        "icon": "📚",
+        "img": "/images/home/advance-features/transport-library-icons/digital-visitor.svg",
         "title": "Digital Visitor Pass Generation",
         "description": "This QR-code-based pass allows students to enter the hostel without wasting any time in giving verifications. Just scan your identity pass and let in the hostel or library."
       },
       {
-        "icon": "💰",
+        "img": "/images/home/advance-features/transport-library-icons/hostel-types.svg",
         "title": "Hostel Types And Room Allocation",
         "description": "With VigoCamp, which is known as one of the best school management software, we make hostel management effortless. Now, you can settle in hostels and rooms according to your preference."
       }
@@ -714,47 +714,47 @@
       "image": "/images/exam-management-info.webp",
       "features": [
       {
-        "icon": "📘",
+        "img": "/images/home/advance-features/exam-management/online-offline.svg",
         "title": "Online/Offline",
         "description": "VigoCamp encourages virtual examinations with its additional features, while some specific features also help the school in conducting offline exams. It makes exam management effortless, from creating papers to managing grades."
       },
       {
-        "icon": "🧑‍🏫",
+        "img": "/images/home/advance-features/exam-management/automated-seating.svg",
         "title": "Automated Seating",
         "description": "This AI-powered seat-assignment feature saves a lot of time for administration and teachers. This automation keeps operations contactless and also offers venue mapping and generating printable hall tickets."
       },
       {
-        "icon": "📘",
+        "img": "/images/home/advance-features/exam-management/multi-format-question.svg",
         "title": "Multi-Format Question Paper Generator",
         "description": "Automation in this school management software lets teachers generate question papers of multiple kinds in seconds. They just have to input data with a prompt regarding the required paper template."
       },
       {
-        "icon": "🧑‍🏫",
+        "img": "/images/home/advance-features/exam-management/instant-grading.svg",
         "title": "Instant Grading Tools",
         "description": "VigoCamp is also equipped with features and tools that help teachers generate accurate and fast paper-checking results. This tool can do MCQ checking, while other paper-checking tasks depend on its training."
       },
       {
-        "icon": "📘",
+        "img": "/images/home/advance-features/exam-management/class-designation.svg",
         "title": "Class Designation",
         "description": "On the basis of student’s performances in entry tests or with personalized class entry criteria, this tool will allocate students to their sessions."
       },
       {
-        "icon": "🧑‍🏫",
+        "img": "/images/home/advance-features/exam-management/exam-center.svg",
         "title": "Exam Center Allocation",
         "description": "This software understands the input in which you can share your total students and halls (with their capacity to handle students) and share a worthy and practically possible output."
       },
       {
-        "icon": "📘",
+        "img": "/images/home/advance-features/exam-management/sms-email-result.svg",
         "title": "SMS/Email Result Sharing",
         "description": "To keep students and parents aware of results, we have built-in SMS sharing and emailing functionalities that can be used on the spot to share fast results. "
       },
       {
-        "icon": "🧑‍🏫",
+        "img": "/images/home/advance-features/exam-management/report-card-marksheet.svg",
         "title": "Report Card & Marksheet Builder",
         "description": "VigoCamp, as a leading software for school management, helps institutes generate error-free and accurate report cards in the form of a detailed performance report."
       },
       {
-        "icon": "🧑‍🏫",
+        "img": "/images/home/advance-features/exam-management/eligibility-alerts.svg",
         "title": "Eligibility Alerts via Attendance",
         "description": "With the inbuilt feature of analyzing the exam entrance criteria, VigoCamp keeps such students (with lower attendance levels) off the list of examinees."
       }
@@ -763,42 +763,42 @@
       "image": "/images/exam-management-info.webp",
       "features": [
       {
-        "icon": "🎓",
+        "icon": "/images/home/advance-features/payroll-finance/auto-payroll.svg🎓",
         "title": "Auto Payroll Generation",
         "description": "This feature lets the administration streamline its monthly payroll operations by using automation. Management of taxes for TDS, PF, ESI, and other deductions can all be handled through these same operations."
       },
       {
-        "icon": "📅",
+        "icon": "/images/home/advance-features/payroll-finance/staff-reimbursement-management.svg",
         "title": "Staff Reimbursement Management",
         "description": "Staff regularly ask for funds, but the process of the verification of their claims takes a lot of manual effort. Here, this school software uses the latest tools to complete this process."
       },
       {
-        "icon": "🎓",
+        "icon": "/images/home/advance-features/payroll-finance/automated-fee-calculation.svg",
         "title": "Automated Fee Calculation",
         "description": "The administration does not need to enter each class to ask for fee collections because the software automates these collections. By sending auto-notifications and fee reminders, this software fuels the process."
       },
       {
-        "icon": "📅",
+        "icon": "/images/home/advance-features/payroll-finance/sms-gateway-integration.svg",
         "title": "SMS Gateway Integration",
         "description": "A modern and mandatory feature has been added to this software, which is an SMS chatbox, which is a source of communication between the sender and receiver."
       },
       {
-        "icon": "🎓",
+        "icon": "/images/home/advance-features/payroll-finance/handling-diverse-accounts.svg",
         "title": "Handling Diverse Accounts",
         "description": "The administration has to handle multiple kinds of funds, including fees, exam expenditures, regular study material expenditures and monthly debts are included which cannot all be handled by the same individual."
       },
       {
-        "icon": "📅",
+        "icon": "/images/home/advance-features/payroll-finance/monthly-yearly-financial-reports.svg",
         "title": "Monthly And Yearly Financial Reports",
         "description": "This school software has expertise in designing detailed monthly and yearly financial reports that give error-free spending analytics. This also reveals spending on different sections of the school."
       },
       {
-        "icon": "📅",
+        "icon": "/images/home/advance-features/payroll-finance/department-wise-budget.svg",
         "title": "Department-Wise Budget Planning",
         "description": "Budget planning on behalf of future changes and upcoming events always gives some clarity that helps in managing spending. Further, a detailed analytic of day-by-day spending also helps in better financial controls."
       },
       {
-        "icon": "📅",
+        "icon": "/images/home/advance-features/payroll-finance/vendor-payment-tracking.svg",
         "title": "Vendor Payment Tracking",
         "description": "Vigo, as the best school management software in India, takes a step ahead and manages this issue by offering a vendor payment tracking feature."
       }
@@ -807,47 +807,47 @@
       "image": "/images/transportation-library-hostel-info.webp",
       "features": [
       {
-        "icon": "📝",
+        "img": "/images/home/advance-features/employee-hrm/smart-employee-recruitment.svg",
         "title": "Smart Employee Recruitment",
         "description": "After interviewing and assigning jobs, the onboarding and KYC process begins, which takes extra time due to the large amount of paperwork, but this school management software makes things easy."
       },
       {
-        "icon": "📊",
+        "img": "/images/home/advance-features/employee-hrm/attendance-leave.svg",
         "title": "Attendance & Leave Sync with Payroll",
         "description": "This feature helps schools manage their expenditures by restricting payments for unexpected leaves. This is because teachers have to do biometric attendance to get a salary day count in their earning patterns."
       },
       {
-        "icon": "📝",
+        "img": "/images/home/advance-features/employee-hrm/role-wise-permission.svg",
         "title": "Role-Wise Permission Control",
         "description": "Having a role in software is common for the crew, but to protect sensitive data, admins have the authority to restrict individual access to the data. "
       },
       {
-        "icon": "📊",
+        "img": "/images/home/advance-features/employee-hrm/performance-review-panel.svg",
         "title": "Performance Review Panel",
         "description": "With a detailed performance review panel where reviews and achievements of staff and teachers are listed, this software lets admins make changes by rewarding or pushing staff for the best outcomes."
       },
       {
-        "icon": "📝",
+        "img": "/images/home/advance-features/employee-hrm/leave-approvals.svg",
         "title": "Leave Approvals",
         "description": "Staff, including teachers, have a separate leave section where only requests regarding leaves are going to be handled. Teachers will send a request with their unique digital signature, and admins can approve or disapprove it."
       },
       {
-        "icon": "📊",
+        "img": "/images/home/advance-features/employee-hrm/id-cards.svg",
         "title": "ID Cards",
         "description": "Once the individuals are onboard, the administration assigns them personalized digital IDs and cards. These cards hold all necessary information, including the school logo and individual information. "
       },
       {
-        "icon": "📝",
+        "img": "/images/home/advance-features/employee-hrm/general-payslips.svg",
         "title": "General Payslips",
         "description": "Generating and sharing payslips for teachers and other staff helps the administration manage financial issues effortlessly. It’s all thanks to our developers who develop such future-rich management software for schools."
       },
       {
-        "icon": "📊",
+        "img": "/images/home/advance-features/employee-hrm/staff-event-calendar.svg",
         "title": "Staff Event Calendar",
         "description": "With the inbuilt staff event calender feature, we let admins set meetings with staff with almost no effort. This helps them in organizing meetings, trainings, and staff events with reminders and attendance tracking."
       },
       {
-        "icon": "📊",
+        "img": "/images/home/advance-features/employee-hrm/digital-resignation.svg",
         "title": "Digital Resignation",
         "description": "We make the resignation process hassle-free by offering diverse features like online submission, clearance forms, and feedback collection. This all helps the administration in managing diverse services regarding the resignation process."
       }

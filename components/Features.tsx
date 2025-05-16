@@ -6,11 +6,11 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
 
   return (
     <div className="min-h-screen  ">
-      <h1 className=" sm:text-3xl text-2xl  font-bold text-center mb-2 ">
+      <h1 className=" sm:text-3xl text-2xl  font-bold text-center mb-2 text-primary">
         {title}
       </h1>
       <div className='flex justify-center items-center'>
-      <Image src={'/images/section-heading.webp'} alt={''} width={200} height={60} className=''/>
+        <Image src={'/images/section-heading.webp'} alt={title} width={200} height={60} />
       </div>
       <p className="text-center text-gray-600 mb-6 font-nunito">
         {desc}
@@ -26,7 +26,7 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
                  ${activeTab === tab.title ? "bg-primary text-white border-b-4 border-transparent" : "bg-white hover:bg-gray-100 border-b-4 border-primary"}`}
           >
             {/* <Image src={tab.img} alt={''} width={70} height={50} className='bg-black rounded-2xl p-2 '/> */}
-           <p>{tab.icon}</p> 
+            <p>{tab.icon}</p>
             {tab.title}
           </div>
 
@@ -39,7 +39,8 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
             <Image
               src={tabFeatures[activeTab]?.image}
               className="2xl:w-[80%] sm:w-[95%] w-full"
-              alt=""
+              alt={activeTab}
+              title={activeTab}
               width={600}
               height={900}
             />
@@ -58,7 +59,16 @@ const Features = ({ tabs, title, desc, tabFeatures }) => {
                 className="group sm:mt-0 mt-5 relative overflow-hidden bg-white p-3 border border-transparent hover:border-secondary transition duration-300 text-center sm:h-38 flex flex-col justify-center items-center"
               >
                 <div className="text-4xl mb-3 group-hover:hidden transition-opacity duration-300">
-                  {feature.icon}
+                  {feature.img ? <Image
+                    src={feature.img}
+                    alt={feature.title}
+                    title={feature.title}
+                    width={35}
+                    height={35}
+                  /> :
+                    <div className="text-4xl mb-3 group-hover:hidden transition-opacity duration-300">
+                      {feature.icon}
+                    </div>}
                 </div>
 
                 <h2 className="text-xl font-semibold mb-2 transform transition-all duration-300 -translate-y-3 group-hover:-translate-y-0">

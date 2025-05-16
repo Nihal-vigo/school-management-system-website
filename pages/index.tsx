@@ -321,10 +321,10 @@ const homepage = () => {
                   </div>
 
                   <div className="absolute left-0 top-40 bounce-slow-one lg:block hidden">
-                    <Image src="/images/a4.png" alt="" width={50} height={200} />
+                    <Image src="/images/home/hero-side-one.webp" alt="" width={50} height={200} />
                   </div>
                   <div className="absolute right-[0px] top-28 bounce-slow-two lg:block hidden">
-                    <Image src="/images/a6.png" alt="" width={50} height={200} />
+                    <Image src="/images/home/hero-side-two.webp" alt="" width={50} height={200} />
                   </div>
                 </div>
               </div>
