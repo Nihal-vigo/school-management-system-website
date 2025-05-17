@@ -132,6 +132,18 @@ export default function DesktopNav(props: any) {
               </span>
             </Link>
 
+            <Link href="/about" passHref={true}>
+              <span className="relative block text-base font-bold leading-none transition duration-300 cursor-pointer animated-border-button border-b-2 border-transparent border xl:pl-2 pl-0 py-4   ">
+                About 
+              </span>
+            </Link>
+
+            <Link href="/contact" passHref={true}>
+              <span className="relative block text-base font-bold leading-none transition duration-300 cursor-pointer animated-border-button border-b-2 border-transparent border xl:pl-2 pl-0 py-4   ">
+                Contact 
+              </span>
+            </Link>
+
             <div className="relative group ">
               <button id="services" aria-label="services"
                 onClick={() => setShowCompanyNav(showCompanyNav === 4 ? 0 : 4)}

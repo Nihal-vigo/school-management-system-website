@@ -180,6 +180,32 @@ export default function MobileNav() {
                     <span>Home</span>
                   </p>
                 </Link>
+
+                <Link
+                  onClick={() => toggleSlideover()}
+                  href="/about"
+                  passHref={true}
+                >
+                  {" "}
+                  <p className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                    <FiHome className="text-[#fff]" size={22} />
+                    <span>About</span>
+                  </p>
+                </Link>
+
+
+                <Link
+                  onClick={() => toggleSlideover()}
+                  href="/contact"
+                  passHref={true}
+                >
+                  {" "}
+                  <p className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                    <FiHome className="text-[#fff]" size={22} />
+                    <span>Contact</span>
+                  </p>
+                </Link>
+
                 <div
                   onClick={() => { setShowCompanyNav(0); setShowNav(showNav === 2 ? 0 : 2) }}
                   className={
