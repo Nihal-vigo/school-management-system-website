@@ -763,42 +763,42 @@
       "image": "/images/exam-management-info.webp",
       "features": [
       {
-        "icon": "/images/home/advance-features/payroll-finance/auto-payroll.svg🎓",
+        "img": "/images/home/advance-features/payroll-finance/auto-payroll.svg🎓",
         "title": "Auto Payroll Generation",
         "description": "This feature lets the administration streamline its monthly payroll operations by using automation. Management of taxes for TDS, PF, ESI, and other deductions can all be handled through these same operations."
       },
       {
-        "icon": "/images/home/advance-features/payroll-finance/staff-reimbursement-management.svg",
+        "img": "/images/home/advance-features/payroll-finance/staff-reimbursement-management.svg",
         "title": "Staff Reimbursement Management",
         "description": "Staff regularly ask for funds, but the process of the verification of their claims takes a lot of manual effort. Here, this school software uses the latest tools to complete this process."
       },
       {
-        "icon": "/images/home/advance-features/payroll-finance/automated-fee-calculation.svg",
+        "img": "/images/home/advance-features/payroll-finance/automated-fee-calculation.svg",
         "title": "Automated Fee Calculation",
         "description": "The administration does not need to enter each class to ask for fee collections because the software automates these collections. By sending auto-notifications and fee reminders, this software fuels the process."
       },
       {
-        "icon": "/images/home/advance-features/payroll-finance/sms-gateway-integration.svg",
+        "img": "/images/home/advance-features/payroll-finance/sms-gateway-integration.svg",
         "title": "SMS Gateway Integration",
         "description": "A modern and mandatory feature has been added to this software, which is an SMS chatbox, which is a source of communication between the sender and receiver."
       },
       {
-        "icon": "/images/home/advance-features/payroll-finance/handling-diverse-accounts.svg",
+        "img": "/images/home/advance-features/payroll-finance/handling-diverse-accounts.svg",
         "title": "Handling Diverse Accounts",
         "description": "The administration has to handle multiple kinds of funds, including fees, exam expenditures, regular study material expenditures and monthly debts are included which cannot all be handled by the same individual."
       },
       {
-        "icon": "/images/home/advance-features/payroll-finance/monthly-yearly-financial-reports.svg",
+        "img": "/images/home/advance-features/payroll-finance/monthly-yearly-financial-reports.svg",
         "title": "Monthly And Yearly Financial Reports",
         "description": "This school software has expertise in designing detailed monthly and yearly financial reports that give error-free spending analytics. This also reveals spending on different sections of the school."
       },
       {
-        "icon": "/images/home/advance-features/payroll-finance/department-wise-budget.svg",
+        "img": "/images/home/advance-features/payroll-finance/department-wise-budget.svg",
         "title": "Department-Wise Budget Planning",
         "description": "Budget planning on behalf of future changes and upcoming events always gives some clarity that helps in managing spending. Further, a detailed analytic of day-by-day spending also helps in better financial controls."
       },
       {
-        "icon": "/images/home/advance-features/payroll-finance/vendor-payment-tracking.svg",
+        "img": "/images/home/advance-features/payroll-finance/vendor-payment-tracking.svg",
         "title": "Vendor Payment Tracking",
         "description": "Vigo, as the best school management software in India, takes a step ahead and manages this issue by offering a vendor payment tracking feature."
       }
